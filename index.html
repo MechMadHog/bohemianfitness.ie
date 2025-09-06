@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bohemian Fitness — Coming Soon</title>
+
+  <!-- Prevent indexing until launch; remove this later -->
+  <meta name="robots" content="noindex,nofollow" />
+
+  <!-- Open Graph (optional) -->
+  <meta property="og:title" content="Bohemian Fitness — Coming Soon" />
+  <meta property="og:description" content="Join Our Tribe, Find Your Vibe" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/img/Temp_Logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/img/Temp_Fav.png" sizes="139x139" />
+
+  <style>
+    :root{
+      --bg:#1E3B4D;      /* background */
+      --fg:#EFA71A;      /* font/accent */
+      --fg-weak: #f2c36a;
+      --white: #fff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:"Andale Mono", AndaleMono, "Lucida Console", Monaco, monospace;
+      display:grid;
+      place-items:center;
+      line-height:1.5;
+    }
+    .wrap{
+      max-width:760px;
+      width:92%;
+      text-align:center;
+      padding:48px 24px;
+    }
+    .logo{
+      width:min(240px, 60vw);
+      height:auto;
+      display:block;
+      margin:0 auto 24px;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,.35));
+    }
+    h1{
+      margin:.2rem 0 .4rem;
+      font-size:clamp(1.6rem, 1.2rem + 2vw, 2.4rem);
+      color:var(--white);
+      letter-spacing:.02em;
+    }
+    .tag{
+      font-size:clamp(1rem,.9rem + .5vw,1.25rem);
+      color:var(--fg-weak);
+      margin-bottom:1.25rem;
+    }
+    p{margin:.5rem 0;color:var(--fg)}
+    .cta{
+      display:inline-block;
+      margin:18px 0 28px;
+      padding:.9rem 1.25rem;
+      border:2px solid var(--fg);
+      color:var(--bg);
+      background:var(--fg);
+      font-weight:700;
+      text-decoration:none;
+      border-radius:10px;
+      transition:transform .08s ease, opacity .2s ease;
+    }
+    .cta:focus,
+    .cta:hover{transform:translateY(-1px); opacity:.95}
+    .links{
+      display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-top:8px;
+    }
+    .iconlink{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:.5rem .8rem; border:1px solid rgba(239,167,26,.35);
+      border-radius:12px; text-decoration:none; color:var(--fg);
+      background:rgba(255,255,255,.04);
+    }
+    .iconlink:hover,.iconlink:focus{background:rgba(255,255,255,.07)}
+    svg{width:20px;height:20px;flex:0 0 20px; fill:currentColor}
+    footer{margin-top:22px; font-size:.9rem; color:var(--fg-weak)}
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <img class="logo" src="/assets/img/Temp_Logo.png" alt="Bohemian Fitness temporary logo" width="800" height="629" />
+
+    <h1>Site Coming Soon…</h1>
+    <p class="tag">Join Our Tribe, Find Your Vibe</p>
+
+    <p>Thanks for your patience... we’re doing some work on the site and it’ll be available shortly.</p>
+
+    <a class="cta" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">
+      Sign up now on LegitFit
+    </a>
+
+    <div class="links" aria-label="Contact & social links">
+      <a class="iconlink" href="mailto:lbdfitness20@gmail.com" target="_blank" rel="noopener" aria-label="Email Bohemian Fitness">
+        <!-- Mail icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.386 6.37a1 1 0 0 0 1.228 0L20 8.236V18H4z"/></svg>
+        lbdfitness20@gmail.com
+      </a>
+
+      <a class="iconlink" href="https://www.instagram.com/lornab_fitness/" target="_blank" rel="noopener" aria-label="Instagram">
+        <!-- Instagram icon -->
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.6a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>
+        Instagram
+      </a>
+    </div>
+
+    <footer>© Bohemian Fitness • Mullingar</footer>
+  </main>
+</body>
+</html>
