@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bohemian Fitness — Coming Soon</title>
+  <title>Bohemian Fitness | Coming Soon</title>
 
   <!-- Prevent indexing until launch -->
   <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#1E3B4D" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -32,13 +33,18 @@
       place-items:center;
       line-height:1.6;
     }
-    .wrap{max-width:760px;width:92%;text-align:center;padding:48px 24px}
+    .wrap{
+      width:min(92%, 820px);
+      padding:56px 36px;
+      text-align:center;
+    }
     .logo{
-      width:min(240px,60vw);
+      width:min(260px, 60vw);
       height:auto;
       display:block;
       margin:0 auto 24px;
-
+      background:var(--bg); /* blend with page */
+      border:0; outline:0; box-shadow:none; filter:none;
     }
     h1{
       margin:.2rem 0 .4rem;
@@ -53,19 +59,31 @@
       margin-bottom:1rem;
       font-family:"Andale Mono", AndaleMono, "Lucida Console", Monaco, monospace;
     }
-    p{margin:.7rem 0;color:var(--fg); text-align:justify}
+    .copy{
+      max-width:60ch;
+      margin:0 auto;
+      text-align:justify;
+    }
+    .copy p{
+      margin:.9rem 0;
+      color:var(--white);
+    }
+    .copy .gap{ height:10px } /* explicit line break gap */
+
+    /* CTAs */
     .cta{
       display:inline-block;
-      margin:18px 0 28px;
-      padding:.9rem 1.25rem;
-      color:var(--bg);
-      background:var(--fg);
-      font-weight:700;
+      margin:10px 8px 28px;
+      padding:.95rem 1.35rem;
+      border-radius:12px;
+      font-weight:800;
       text-decoration:none;
-      border-radius:10px;
       transition:transform .08s ease, opacity .2s ease;
     }
     .cta:focus,.cta:hover{transform:translateY(-1px);opacity:.95}
+    .cta-call{ background:var(--fg); color:var(--bg); min-width:200px }
+    .cta-secondary{ background:transparent; color:var(--fg); border:2px solid var(--fg) }
+
     .links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:8px}
     .iconlink{
       display:inline-flex;align-items:center;gap:10px;
@@ -75,8 +93,27 @@
     }
     .iconlink:hover,.iconlink:focus{background:rgba(255,255,255,.07)}
     svg{width:20px;height:20px;flex:0 0 20px;fill:currentColor}
+
     footer{margin-top:22px;font-size:.95rem;color:var(--fg-weak)}
     .address{margin-top:6px;color:var(--white)}
+
+    /* Sticky call bar on phones */
+    @media (max-width: 768px){
+      body{ padding-bottom:76px } /* room so content doesn't hide behind bar */
+      .cta-call,.cta-secondary{ width:100%; min-width:unset; margin:10px 0 }
+      .callbar{
+        position:fixed; left:0; right:0; bottom:0;
+        background:var(--fg); color:var(--bg);
+        display:flex; gap:12px; padding:12px; z-index:9999;
+        box-shadow:0 -8px 24px rgba(0,0,0,.35);
+      }
+      .callbar a{
+        flex:1; text-align:center; text-decoration:none;
+        padding:.9rem 1rem; border-radius:10px; font-weight:900;
+      }
+      .callbar .primary{ background:var(--bg); color:var(--fg) }
+      .callbar .secondary{ background:transparent; border:2px solid var(--bg); color:var(--bg) }
+    }
   </style>
 </head>
 <body>
@@ -86,23 +123,27 @@
     <h1>Site Coming Soon</h1>
     <p class="tag">Join Our Tribe, Find Your Vibe</p>
 
-    <p>
-      Bohemian Fitness is led by Lorna, a health and wellness professional 🧘‍♀️🏋️‍♂️ with a
-      BSc (Hons) in Sports Strength &amp; Conditioning 🎓. She’s also a pre and post-natal
-      training specialist 🤰 who supports clients through every stage with smart, safe
-      programming and a welcoming community atmosphere.
-    </p>
-    <br>
-    <p>
-      If you want coaching that blends strength, mobility and accountability, you’ll fit right in.
-      Expect small group sessions, clear progress tracking and a timetable that works for real life.
-      Beginners are always welcome and every workout can be tailored to your level. Join today and
-      start building momentum you can feel.
-    </p>
+    <div class="copy">
+      <p>
+        Bohemian Fitness is led by Lorna, a health and wellness professional 🧘‍♀️🏋️‍♂️ with a
+        BSc (Hons) in Sports Strength &amp; Conditioning 🎓. She is also a pre and post-natal
+        training specialist 🤰 who supports clients through every stage with smart, safe
+        programming and a welcoming community atmosphere.
+      </p>
 
-    <a class="cta" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">
-      Join Today
-    </a>
+      <div class="gap" aria-hidden="true"></div>
+
+      <p>
+        If you want coaching that blends strength, mobility and accountability, you will fit right in.
+        Expect small group sessions, clear progress tracking and a timetable that works for real life.
+        Beginners are always welcome and every workout can be tailored to your level. Join today and
+        start building momentum you can feel.
+      </p>
+    </div>
+
+    <!-- Primary / Secondary CTAs -->
+    <a class="cta cta-call" href="tel:+353857432964" aria-label="Call Bohemian Fitness Now">Call Now</a>
+    <a class="cta cta-secondary" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
 
     <div class="links" aria-label="Contact & social links">
 
@@ -115,7 +156,7 @@
       <a class="iconlink" href="tel:+353857432964" aria-label="Call Bohemian Fitness">
         <!-- Phone icon -->
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1.1 1.1 0 0 1 1.1-.27c1.2.4 2.4.62 3.7.66a1.1 1.1 0 0 1 1.1 1.1V20a1.1 1.1 0 0 1-1.1 1.1A17.9 17.9 0 0 1 3 7.1 1.1 1.1 0 0 1 4.1 6h3.3a1.1 1.1 0 0 1 1.1 1.1c.04 1.3.27 2.5.66 3.7.12.37.03.78-.27 1.1L6.6 10.8z"/></svg>
-        Call Now
+        Call
       </a>
 
       <a class="iconlink" href="https://www.instagram.com/lornab_fitness/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -130,5 +171,11 @@
       <div class="address">Austin Friars St, Mullingar, Co. Westmeath, N91 X221</div>
     </footer>
   </main>
+
+  <!-- Sticky mobile quick actions -->
+  <nav class="callbar" role="navigation" aria-label="Quick actions">
+    <a class="primary" href="tel:+353857432964" aria-label="Call Bohemian Fitness Now">Call Now</a>
+    <a class="secondary" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
+  </nav>
 </body>
 </html>
