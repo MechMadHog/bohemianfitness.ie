@@ -292,10 +292,9 @@ section[style*="--bg-elev"] { background: var(--surface); }
 .landing-logo {
   display: block;
   margin-inline: auto;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;                /* prevents stretching */
   width: clamp(100px, 24vw, 220px); /* responsive cap */
-  aspect-ratio: 800 / 629;     /* optional: keeps layout stable */
 }
 
 /* If some other rule is forcing a fixed size on .logo or img */
