@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Home
+permalink: /home/
+noindex: true                # adds the meta robots tag
+sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
 <!-- HERO -->
