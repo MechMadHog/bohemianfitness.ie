@@ -23,17 +23,11 @@ title: Coming Soon
             start building momentum you can feel.
           </p>
         <div class="gap" aria-hidden="true"></div>
-        <p>
-          The challenge begins <strong>8th September</strong> and runs for 12 weeks.  
-          If you need a supportive community to help with your health and wellness goals,  
-          this is for you. Fill out the form and join us!
-        </p>
-        <a class="cta cta-call" href="https://forms.gle/GHG6GD4Ec8vfqfSb6" aria-label="Join Our 12 Week Challeng" target="_blank" rel="noopener">
-          12 Week End of Summer Challenge
-        </a>
+    <div class="gap" aria-hidden="true"></div>
+    <a class="cta cta-secondary" href="tel:+353857432964" aria-label="Call Bohemian Fitness Now">Call Now</a>
+    <div class="gap" aria-hidden="true"></div>
         <div class="gap" aria-hidden="true"></div>
     </div>
-    <footer>
       <div class="address">Austin Friars St, Mullingar, Co. Westmeath, N91 X221</div>
       <div class="gap" aria-hidden="true"></div>
     <div class="links" aria-label="Contact & social links">
@@ -50,11 +44,7 @@ title: Coming Soon
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.7-1.6 1.5V12H16l-.5 3h-2.5v7A10 10 0 0 0 22 12"/></svg>
       </a>
     </div>
-    <div class="gap" aria-hidden="true"></div>
-    <a class="cta cta-secondary" href="tel:+353857432964" aria-label="Call Bohemian Fitness Now">Call Now</a>
-    <div class="gap" aria-hidden="true"></div>
-          © 2025 Bohemian Fitness
-    </footer>
+
   </main>
 
 <!-- Landing Page styles -->
