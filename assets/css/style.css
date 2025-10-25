@@ -134,8 +134,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
   margin: .2rem 0 .5rem;
 }
-h1 { font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.5rem); }
-h2 { font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem); }
+/* FIX: move mixed-unit math to calc() so Sass doesn't try to add rem + vw */
+h1 { font-size: clamp(1.75rem, calc(1.2rem + 2.2vw), 2.5rem); }
+h2 { font-size: clamp(1.4rem,  calc(1rem + 1.4vw), 2rem); }
 
 /* Cover semantic tags + Bootstrap heading & display utilities */
 h1, h2, h3, h4, h5, h6,
