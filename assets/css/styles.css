@@ -294,7 +294,7 @@ section[style*="--bg-elev"] { background: var(--surface); }
   margin-inline: auto;
   max-width: 100%;
   height: auto;                /* prevents stretching */
-  width: clamp(180px, 60vw, 560px); /* responsive cap */
+  width: clamp(100px, 24vw, 220px); /* responsive cap */
   aspect-ratio: 800 / 629;     /* optional: keeps layout stable */
 }
 
