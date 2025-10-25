@@ -81,9 +81,6 @@ sitemap: false               # keeps it out of jekyll-sitemap
             </div>
           </div>
         </div>
-        <div class="card-footer bg-transparent text-center small text-muted">
-          © 2025 Bohemian Fitness
-        </div>
       </div>
     </div>
     <!-- Contact Form -->
