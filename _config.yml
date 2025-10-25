@@ -1,0 +1,60 @@
+title: "Bohemian Fitness"
+description: "Local gym & wellness - Mullingar - Join Our Tribe, Find Your Vibe"
+baseurl: "" # leave empty for GitHub Pages with custom domain
+url: "https://bohemianfitness.ie/"
+author: Bohemian Fitness
+
+# Required for pagination (works on GitHub Pages)
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Pagination (blog index)
+paginate: 6
+paginate_path: "/blog/page:num"
+permalink: /blog/:title/
+
+collections:
+  trainers:
+    output: true
+    permalink: /trainers/:name/
+
+# Navigation (editable)
+nav:
+  - name: Home
+    url: /
+  - name: Programs
+    url: /programs/
+  - name: Trainers
+    url: /trainers/
+  - name: Blog
+    url: /blog/
+  - name: Contact
+    url: /contact/
+
+# Nice defaults for posts
+defaults:
+  - scope: { path: "", type: "posts" }
+    values:
+      layout: post
+      author: "Mike MacDonagh"
+      image: ""         # social preview per-post (optional)
+      featured: false   # toggle to feature
+
+# Formspree placeholder — replace with your endpoint id
+formspree_form_id: "your_form_id_here"
+
+# Google embeds placeholders
+google_maps_embed_src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1185.8970766388447!2d-7.335678446666141!3d53.52573308156449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485dc102db7976c1%3A0xfdec4f819396272!2sLor&#39;%20Na%20B%20Bohemian%20Fitness!5e0!3m2!1sen!2sie!4v1761259391937!5m2!1sen!2sie"
+google_reviews_embed_url: "https://g.page/r/YOUR_PLACE_ID/review"
+
+# Search
+search_exclude:
+  - /assets/
+  - /node_modules/
+
+
+
+

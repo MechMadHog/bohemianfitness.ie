@@ -1,0 +1,37 @@
+# --- Jekyll build/cache
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# --- Node (if used)
+node_modules/
+
+# --- Bundler artefacts
+.bundle/
+vendor/          # catch-all (covers vendor/bundle/ too)
+# Gemfile.lock   # ← Uncomment to ignore; leave commented if you want to commit it
+
+# --- Docker (choose your policy)
+# If Docker files are only for local dev, ignore them; otherwise, remove these lines.
+# .env
+# .docker/
+# Dockerfile
+# .dockerignore
+# docker-compose.yml
+# docker-compose.*.yml
+# docker-compose.override.yml
+# docker-compose.local.yml
+# *.env.local
+# *.env.development
+
+# --- Logs & OS noise
+*.log
+.DS_Store
+Thumbs.db
+
+# --- Editor/IDE noise
+.vscode/
+.idea/
+*.iml
+*.swp
+*.tmp
