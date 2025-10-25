@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Resources
-permalink: /resources/
+title: Pricing
+permalink: /pricing/
 noindex: true                # adds the meta robots tag
 sitemap: false               # keeps it out of jekyll-sitemap
 ---
