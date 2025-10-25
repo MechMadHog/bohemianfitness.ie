@@ -287,3 +287,19 @@ section[style*="--bg-elev"] { background: var(--surface); }
   color: #212529 !important;
 }
 .timetable { --bs-table-border-color: #e9ecef; }
+
+/* Landing logo: centered, responsive, preserves aspect ratio */
+.landing-logo {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;                /* prevents stretching */
+  width: clamp(180px, 60vw, 560px); /* responsive cap */
+  aspect-ratio: 800 / 629;     /* optional: keeps layout stable */
+}
+
+/* If some other rule is forcing a fixed size on .logo or img */
+img.landing-logo {
+  width: auto;       /* ensure width from clamp above wins */
+  height: auto;      /* override any inline height="..." */
+}

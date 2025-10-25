@@ -4,7 +4,7 @@ title: Coming Soon
 ---
 
 <main class="wrap" role="main">
-    <img class="logo" src="/assets/images/branding/logo.png" alt="Bohemian Fitness temporary logo" width="800" height="629" />
+    <img src="/assets/images/branding/logo.png" alt="Bohemian Fitness temporary logo" class="landing-logo img-fluid d-block mx-auto"/>
     <h1>Site Coming Soon</h1>
     <p class="tag">Join Our Tribe, Find Your Vibe</p>
     <a class="cta cta-call" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
@@ -31,4 +31,3 @@ title: Coming Soon
       <div class="address">Austin Friars St, Mullingar, Co. Westmeath, N91 X221</div>
       <div class="gap" aria-hidden="true"></div>
   </main>
-  
