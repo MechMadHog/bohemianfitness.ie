@@ -1,25 +1,30 @@
 /* =========================================================
-   Bohemian Fitness Theme — explicit variable names
+   Bohemian Fitness Theme — Teal site, amber accents, light cards
    Brand: Deep Teal (#1E3B4D) + Amber (#EFA71A)
    ========================================================= */
 
 :root {
   /* Brand */
-  --brand-teal: #1E3B4D;
-  --brand-teal-700: #162b39;
-  --brand-amber: #EFA71A;
-  --brand-amber-200: #f2c36a;
+  --brand-teal: #1E3B4D;         /* deep teal */
+  --brand-teal-700: #162b39;     /* darker teal hover */
+  --brand-amber: #EFA71A;        /* accent */
+  --brand-amber-200: #f2c36a;    /* soft accent / hover */
 
-  /* Surfaces & text */
-  --page-bg: #ffffff;
-  --surface: #f6f8fb;
-  --text: #0f1215;
-  --text-muted: #4a5562;
-  --border: #d9dee6;
+  /* Surfaces & text (TEAL SITE) */
+  --page-bg: var(--brand-teal);  /* global backdrop = teal */
+  --surface: #254b5f;            /* elevated teal panel */
+  --text: #e7edf2;               /* light text for teal */
+  --text-muted: #b3c1cb;         /* softer light text */
+  --border: #1b3a49;             /* teal-ish border on dark backgrounds */
+
+  /* Light card system */
+  --card-bg: #ffffff;
+  --card-text: #21313b;
+  --card-border: #e0e7ef;
 
   /* Effects */
   --radius: 14px;
-  --shadow: 0 10px 24px rgba(10,16,22,.08);
+  --shadow: 0 10px 24px rgba(10,16,22,.18);
 
   /* Type */
   --heading-font: "Andale Mono", AndaleMono, "Lucida Console", Monaco, monospace;
@@ -33,32 +38,40 @@
   --bs-light: #f8fafc;
 }
 
-/* Dark mode */
+/* Dark mode hint — keep the teal feel but deepen surfaces a touch */
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-bg: #0f171c;
-    --surface: #121a20;
-    --text: #e7edf2;
-    --text-muted: #a9b4be;
-    --border: #1b232a;
-
-    --brand-teal: #1E3B4D;
-    --brand-teal-700: #13222c;
-    --brand-amber: #EFA71A;
-    --brand-amber-200: #f2c36a;
+    --surface: #203e50;
+    --text: #eef3f7;
+    --text-muted: #c2cbd2;
+    --border: #1a3441;
   }
 }
 
+/* ------------ Global Body ------------ */
+html, body { height: 100%; }
+body {
+  background-color: var(--page-bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Containers can sit directly on teal; use cards for light surfaces */
+.section-elev { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); }
+
 /* ------------ Header & Nav ------------ */
 .site-header {
-  background: rgba(255,255,255,.78);
+  background: rgba(255,255,255,.1);           /* glassy over teal */
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 8px 24px rgba(10,16,22,.06);
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
   backdrop-filter: saturate(140%) blur(6px);
 }
 .site-header.is-scrolled {
-  background: rgba(255,255,255,.94);
-  box-shadow: 0 10px 28px rgba(10,16,22,.08);
+  background: rgba(255,255,255,.16);
+  box-shadow: 0 10px 28px rgba(0,0,0,.22);
 }
 
 /* Brand */
@@ -74,26 +87,24 @@
   margin: 0;
 }
 
-/* Nav links: brand teal for visibility */
+/* Nav links: visible on teal */
 .site-header .nav-link {
   display: inline-block;
   padding: .5rem .75rem;
-  color: var(--brand-teal);
+  color: var(--brand-amber);           /* amber on teal */
   text-decoration: none;
   position: relative;
+  border-radius: .5rem;
 }
 .site-header .nav-link:hover,
 .site-header .nav-link:focus {
-  color: var(--brand-teal-700);
-  background: rgba(30,59,77,.08); /* subtle teal wash */
-  border-radius: .5rem;
+  color: var(--brand-amber-200);
+  background: rgba(239,167,26,.10);    /* amber wash */
 }
 .site-header .nav-link::after {
   content: "";
   position: absolute;
-  left: .75rem;
-  right: .75rem;
-  bottom: .35rem;
+  left: .75rem; right: .75rem; bottom: .35rem;
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--brand-amber), transparent);
   transform: scaleX(0);
@@ -111,7 +122,7 @@
 .navbar-toggler {
   border: 0;
   padding: .25rem .5rem;
-  color: var(--brand-teal);
+  color: var(--brand-amber);
 }
 .hamburger, .hamburger::before, .hamburger::after {
   content: "";
@@ -129,16 +140,16 @@
 /* ------------ Typography ------------ */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: var(--text);
+  color: #ffffff; /* brighter on teal */
   letter-spacing: .02em;
   line-height: 1.15;
   margin: .2rem 0 .5rem;
 }
-/* FIX: move mixed-unit math to calc() so Sass doesn't try to add rem + vw */
+/* Mixed-unit fix: use calc() inside clamp() */
 h1 { font-size: clamp(1.75rem, calc(1.2rem + 2.2vw), 2.5rem); }
 h2 { font-size: clamp(1.4rem,  calc(1rem + 1.4vw), 2rem); }
 
-/* Cover semantic tags + Bootstrap heading & display utilities */
+/* Ensure Bootstrap heading & display utilities inherit font */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
@@ -148,9 +159,40 @@ h1, h2, h3, h4, h5, h6,
 /* If you have hero titles with special classes, include them too: */
 .hero-title, .page-title { font-family: var(--heading-font) !important; }
 
-/* Links */
+/* Copy on teal */
+p, li, .lead { color: var(--text); }
+.muted, .text-muted { color: var(--text-muted) !important; }
+
+/* Links — amber accent */
 a { color: var(--brand-amber); }
-a:hover { color: #cc8f16; }
+a:hover { color: var(--brand-amber-200); }
+
+/* ------------ Cards (LIGHT) ------------ */
+.card {
+  background: var(--card-bg);
+  color: var(--card-text);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.card .card-title,
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 { color: #0f1418; }
+.card a { color: var(--brand-amber); }
+.card a:hover { color: #cc8f16; }
+
+/* Forms inside light cards */
+.form-control, .form-select, .input-group-text, .form-check-input {
+  background: #fff;
+  color: var(--card-text);
+  border-color: var(--card-border);
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--brand-amber);
+  box-shadow: 0 0 0 .2rem rgba(239,167,26,.25);
+}
+
+/* Tables in cards */
+.table { --bs-table-bg: #ffffff; --bs-table-color: var(--card-text); }
 
 /* ------------ Buttons ------------ */
 .btn-primary {
@@ -168,15 +210,26 @@ a:hover { color: #cc8f16; }
 }
 
 .btn-outline-secondary {
-  color: #21313b;
-  border-color: #cfd8e3;
-  background-color: #ffffff;
+  color: #f1f5f8;
+  border-color: #3d5d6f;
+  background-color: transparent;
 }
 .btn-outline-secondary:hover {
   color: #0f1418;
   border-color: var(--brand-amber);
+  background-color: rgba(239,167,26,.18);
+}
+.card .btn-outline-secondary {   /* inside light cards, adjust for contrast */
+  color: #21313b;
+  border-color: #cfd8e3;
+  background-color: #ffffff;
+}
+.card .btn-outline-secondary:hover {
+  color: #0f1418;
+  border-color: var(--brand-amber);
   background-color: rgba(239,167,26,.07);
 }
+
 .btn-outline-secondary.is-active,
 .btn-outline-secondary.is-active:hover {
   color: #1a2430;
@@ -184,22 +237,18 @@ a:hover { color: #cc8f16; }
   border-color: var(--brand-amber);
   text-shadow: none;
 }
-.btn-outline-secondary:focus-visible {
-  box-shadow: 0 0 0 0.2rem rgba(239,167,26,.35);
-}
 
 /* ------------ Footer ------------ */
 .site-footer {
   background:
-    linear-gradient(180deg, rgba(41,88,111,.12), rgba(239,167,26,.10)),
+    linear-gradient(180deg, rgba(41,88,111,.22), rgba(239,167,26,.14)),
     var(--page-bg);
   color: var(--text);
   border-top: 1px solid var(--border);
-  box-shadow: 0 -8px 24px rgba(10,16,22,.06) inset;
+  box-shadow: 0 -8px 24px rgba(0,0,0,.25) inset;
 }
 
-/* ------------ Cards & Badges ------------ */
-.card:hover { border-color: #cfd7e2; }
+/* ------------ Badges ------------ */
 .badge.text-bg-light {
   background: #f3f6f9 !important;
   color: #2a2f36 !important;
