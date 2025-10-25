@@ -5,6 +5,7 @@ title: Coming Soon
 
 <main class="wrap" role="main">
     <img src="/assets/images/branding/logo.png" alt="Bohemian Fitness temporary logo" class="landing-logo img-fluid d-block mx-auto"/>
+    <div class="gap" aria-hidden="true"></div>
     <h1>Site Coming Soon</h1>
     <p class="tag">Join Our Tribe, Find Your Vibe</p>
     <a class="cta cta-call" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
