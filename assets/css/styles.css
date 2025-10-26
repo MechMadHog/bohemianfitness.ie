@@ -30,9 +30,9 @@
   /* Type */
   --heading-font:"Andale Mono", AndaleMono, "Lucida Console", Monaco, monospace;
 
-  /* Layout */
-  --container-max:1100px;   /* page canvas on desktop */
-  --copy-max:62ch;          /* comfy reading width */
+  /* Layout (page-level wrappers) */
+  --container-max:1280px;   /* base desktop canvas */
+  --copy-max:70ch;          /* comfy reading width */
   --gap:1rem;
 
   /* Bootstrap mappings */
@@ -43,6 +43,11 @@
   --bs-dark:#0b0e12;
   --bs-light:#f8fafc;
 }
+/* Widen the canvas on very large screens */
+@media (min-width:1400px){
+  :root{ --container-max:1440px; }
+}
+
 @media (prefers-color-scheme:dark){
   :root{
     --surface:#203e50;
@@ -59,6 +64,11 @@
 
 /* ------------------ Base ------------------ */
 html,body{height:100%;}
+/* Base size bump so paragraphs aren’t tiny */
+html { font-size:16px; }
+@media (min-width:768px){ html { font-size:17px; } }
+@media (min-width:1200px){ html { font-size:18px; } }
+
 body{
   background:var(--page-bg);
   color:var(--text);
@@ -68,8 +78,47 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
-/* Elevated block you can drop on teal */
+/* Utility: elevated block on teal */
 .section-elev{background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow);}
+
+/* ------------------ Layout width (Bootstrap override) ------------------ */
+/* Wider gutters so the grid breathes like Zeus */
+.container, .container-fluid, .row { --bs-gutter-x: 2rem; }
+
+/* ≥1200px: widen containers */
+@media (min-width:1200px){
+  .container,
+  .container-sm,.container-md,.container-lg,.container-xl,.container-xxl{
+    max-width:1280px; /* matches --container-max base */
+  }
+}
+/* ≥1400px: push further */
+@media (min-width:1400px){
+  .container,
+  .container-sm,.container-md,.container-lg,.container-xl,.container-xxl{
+    max-width:1440px; /* Zeus feel */
+  }
+}
+
+/* Optional: use for select sections that should run wider */
+.container-wide{
+  max-width:1440px;
+  margin-left:auto; margin-right:auto;
+  padding-left:1.25rem; padding-right:1.25rem;
+}
+
+/* Main content wrappers that aren’t Bootstrap containers */
+main.wrap{
+  max-width:var(--container-max);
+  margin:0 auto;
+  padding:6rem 1.25rem 3rem;
+}
+@media (min-width:768px){ main.wrap{padding-top:7rem;} }
+@media (min-width:1200px){ main.wrap{padding-top:8rem;} }
+
+/* Tight, readable column for copy */
+.copy{max-width:var(--copy-max); margin-inline:auto; line-height:1.7; font-size:clamp(1rem,.95rem + .3vw,1.1rem);}
+.address{max-width:var(--copy-max); margin:1.5rem auto 0; opacity:.9;}
 
 /* ------------------ Header & Nav ------------------ */
 .site-header{
@@ -77,31 +126,37 @@ body{
   border-bottom:1px solid var(--border);
   box-shadow:0 8px 24px rgba(0,0,0,.18);
   backdrop-filter:saturate(140%) blur(6px);
+  padding-block:.75rem;                    /* taller bar */
 }
+@media (min-width:992px){ .site-header{ padding-block:1rem; } }
 .site-header.is-scrolled{
   background:rgba(255,255,255,.16);
   box-shadow:0 10px 28px rgba(0,0,0,.22);
+  padding-block:.5rem;
 }
 
 /* Brand */
 .brand .brand-text{color:var(--text);}
+.brand-logo{ height:48px; }
+@media (min-width:992px){ .brand-logo{ height:56px; } }
+.site-header.is-scrolled .brand-logo{ height:44px; }
 
 /* Nav list */
 .site-header .nav-list{
-  list-style:none; display:flex; align-items:center; gap:1rem;
+  list-style:none; display:flex; align-items:center; gap:1.25rem;
   padding-left:0; margin:0;
 }
 
 /* Nav links */
 .site-header .nav-link{
-  display:inline-block; padding:.5rem .75rem;
+  display:inline-block; padding:.6rem .85rem;
   color:var(--brand-amber);
   text-decoration:none; position:relative; border-radius:.5rem;
 }
 .site-header .nav-link:hover,
 .site-header .nav-link:focus{color:var(--brand-amber-200); background:rgba(239,167,26,.10);}
 .site-header .nav-link::after{
-  content:""; position:absolute; left:.75rem; right:.75rem; bottom:.35rem; height:2px;
+  content:""; position:absolute; left:.85rem; right:.85rem; bottom:.35rem; height:2px;
   background:linear-gradient(90deg,transparent,var(--brand-amber),transparent);
   transform:scaleX(0); transform-origin:center; transition:transform .2s ease;
 }
@@ -119,6 +174,21 @@ body{
 }
 .hamburger::before{transform:translateY(-6px);}
 .hamburger::after{transform:translateY(4px);}
+
+/* Emphasise “Book Now” — add class="nav-cta" to that link */
+.site-header .nav-link.nav-cta{
+  background:var(--brand-amber);
+  color:#1a2430;
+  border-radius:999px;
+  padding:.55rem 1rem;
+  font-weight:700;
+  box-shadow:0 6px 16px rgba(239,167,26,.25);
+}
+.site-header .nav-link.nav-cta:hover,
+.site-header .nav-link.nav-cta:focus{
+  background:#cc8f16; color:#0f1418;
+}
+.site-header .nav-link.nav-cta::after{ display:none; }
 
 /* ------------------ Typography ------------------ */
 h1,h2,h3,h4,h5,h6{
@@ -193,15 +263,76 @@ a:hover{color:var(--brand-amber-200);}
   background:linear-gradient(180deg, rgba(41,88,111,.22), rgba(239,167,26,.14)), var(--page-bg);
   color:var(--text); border-top:1px solid var(--border);
   box-shadow:0 -8px 24px rgba(0,0,0,.25) inset;
+  padding-top:1.25rem;
 }
 
-/* ------------------ Badges ------------------ */
-.badge.text-bg-light{background:#f3f6f9!important; color:#2a2f36!important; border:1px solid #e0e7ef;}
-.badge-accent{background:#fff3db; color:#8e5c07; border:1px solid #ffe2af;}
+/* Footer widget area */
+.footer-widgets{
+  max-width:var(--container-max);
+  margin:0 auto;
+  padding:2rem 1rem 1rem;
+  display:grid;
+  gap:1.25rem;
+  grid-template-columns:1fr;
+}
+.footer-widgets h6{
+  font-family:var(--heading-font);
+  margin:0 0 .5rem 0;
+  color:#fff;
+}
+.footer-widgets a{ color:var(--brand-amber); }
+.footer-widgets a:hover{ color:var(--brand-amber-200); }
 
-/* ------------------ Sections ------------------ */
-section[style*="--bg"]{background:var(--page-bg);}
-section[style*="--bg-elev"]{background:var(--surface);}
+@media (min-width:768px){
+  .footer-widgets{ grid-template-columns:1.2fr 1fr 1fr; }
+}
+
+/* Bottom bar bigger */
+.site-footer .bottom{
+  border-top:1px solid var(--border);
+  padding:.9rem 1rem;
+  font-size:.95rem;
+}
+
+/* ------------------ Landing helpers ------------------ */
+.landing-logo{
+  display:block; margin:0 auto 1.5rem auto;
+  max-width:260px; width:100%; height:auto;
+}
+
+/* Keep key blocks aligned to the same centered column */
+main.wrap > h1,
+main.wrap > .tag,
+main.wrap > .copy,
+main.wrap > .address,
+main.wrap > .cta,
+main.wrap > .cta-secondary{
+  max-width:var(--copy-max);
+  margin-left:auto; margin-right:auto;
+}
+/* Headline/tag centered; paragraph column left-aligned */
+main.wrap > h1, main.wrap > .tag{ text-align:center; }
+main.wrap > .copy{ text-align:left; }
+
+/* CTA alignment beneath the headline column */
+main.wrap > .cta,
+main.wrap > .cta-secondary{
+  display:block; width:max-content;
+  margin:.5rem auto 1rem 0;
+}
+
+/* CTA group inside paragraphs */
+.copy .cta-group{
+  display:flex; gap:.6rem; flex-wrap:wrap; margin:.5rem 0 1rem;
+}
+.copy .cta-group .cta{ margin:0; }
+.copy .cta, .copy .cta-secondary{
+  display:inline-flex; width:auto; margin:.5rem .6rem 1rem 0; vertical-align:middle;
+}
+
+/* Paragraph rhythm inside copy */
+.copy p{ margin:0 0 1rem 0; }
+.copy p:last-child{ margin-bottom:0; }
 
 /* ------------------ Focus ------------------ */
 .focus-ring:focus-visible{outline:2px solid var(--brand-amber); outline-offset:3px; border-radius:8px;}
@@ -213,206 +344,3 @@ section[style*="--bg-elev"]{background:var(--surface);}
 }
 .timetable td{background:#fff!important; color:#212529!important;}
 .timetable{--bs-table-border-color:#e9ecef;}
-
-/* =========================================================
-   Landing / Coming Soon page helpers
-   ========================================================= */
-main.wrap{
-  max-width:var(--container-max);
-  margin:0 auto;
-  padding:6rem 1.25rem 3rem;
-}
-@media (min-width:768px){ main.wrap{padding-top:7rem;} }
-@media (min-width:1200px){ main.wrap{padding-top:8rem;} }
-
-/* Tight, readable column for copy */
-.copy{max-width:var(--copy-max); margin-inline:auto; line-height:1.65; font-size:clamp(1rem, .95rem + .3vw, 1.1rem);}
-
-/* Address aligns with copy width */
-.address{max-width:var(--copy-max); margin:1.5rem auto 0; opacity:.9;}
-
-/* Logo */
-.landing-logo{
-  display:block; margin:0 auto 2rem auto;
-  max-width:220px; width:100%; height:auto;
-}
-
-/* Simple spacer utility if you’re using <div class="gap"> */
-.gap{height:var(--gap);}
-@media (min-width:768px){ .gap{height:calc(var(--gap) * 1.25);} }
-
-/* Optional CTA styling used on the Coming Soon page */
-.cta{
-  display:inline-block; padding:.65rem 1rem; border-radius:.6rem;
-  font-weight:600; text-decoration:none; transition:background .15s ease, color .15s ease, border-color .15s ease;
-}
-.cta.cta-call{background:var(--brand-amber); color:#1a2430;}
-.cta.cta-call:hover{background:#cc8f16; color:#0f1418;}
-
-.cta.cta-secondary{
-  color:#f1f5f8; border:1px solid #3d5d6f; background:transparent;
-}
-.cta.cta-secondary:hover{
-  color:#0f1418; border-color:var(--brand-amber); background:rgba(239,167,26,.18);
-}
-
-/* === Coming Soon column fix === */
-
-/* === Coming Soon column + alignment (merged) === */
-
-/* Put all key blocks on the same centered column */
-main.wrap > h1,
-main.wrap > .tag,
-main.wrap > .copy,
-main.wrap > .address,
-main.wrap > .cta,
-main.wrap > .cta-secondary{
-  max-width: var(--copy-max);   /* same width as the paragraph column */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Heading + tagline centered; copy stays left-aligned inside */
-main.wrap > h1,
-main.wrap > .tag{ text-align: center; }
-main.wrap > .copy{ text-align: left; }
-
-/* CTAs align to the left edge of the column (under heading/tag) */
-main.wrap > .cta,
-main.wrap > .cta-secondary{
-  display: block;               /* sits at the column’s left edge */
-  width: max-content;           /* snug to text */
-  margin-left: 0;               /* override auto-centering */
-  margin-right: auto;
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-}
-
-/* Flex row with wrap + gap */
-.copy .cta-group{
-  display: flex;
-  gap: .6rem;
-  flex-wrap: wrap;
-  margin: .5rem 0 1rem;
-}
-.copy .cta-group .cta{ margin: 0; }  /* spacing handled by gap */
-
-/* --- CTA: side-by-side inside .copy --- */
-.copy .cta,
-.copy .cta-secondary{
-  display: inline-flex;      /* sit next to each other */
-  width: auto;               /* no max-content block sizing */
-  margin: .5rem .6rem 1rem 0;/* gap between buttons */
-  vertical-align: middle;
-}
-
-/* Address centered under the column */
-main.wrap > .address{ text-align: center; }
-
-/* Logo spacing tweak to balance top rhythm */
-.landing-logo{
-  max-width: 260px;
-  margin: 0 auto 1.5rem;
-}
-
-/* Paragraph rhythm inside the copy block */
-.copy p{ margin: 0 0 1rem 0; }
-.copy p:last-child{ margin-bottom: 0; }
-
-/* Slightly widen copy on very large screens so it doesn’t feel cramped */
-@media (min-width: 1200px){
-  :root{ --copy-max: 66ch; }
-}
-
-/* ===== Scale & rhythm ===== */
-
-/* Wider page canvas */
-:root{
-  --container-max: 1280px;   /* was 1100 */
-  --copy-max: 70ch;          /* was 62–66ch */
-}
-
-/* Base text size bump */
-html { font-size: 16px; }                 /* fallback */
-@media (min-width: 768px){ html { font-size: 17px; } }
-@media (min-width: 1200px){ html { font-size: 18px; } }  /* paragraphs will read ~18px */
-
-/* Body/copy line-height */
-.copy{ line-height: 1.7; }
-
-/* ===== Header: taller with bigger logo ===== */
-.site-header{
-  padding-block: .75rem;                  /* taller bar */
-}
-@media (min-width: 992px){
-  .site-header{ padding-block: 1rem; }    /* desktop */
-}
-
-/* Brand logo size */
-.brand-logo{ height: 48px; }              /* was ~36; tweak to taste */
-@media (min-width: 992px){
-  .brand-logo{ height: 56px; }
-}
-
-/* When scrolled, keep it a touch smaller but not tiny */
-.site-header.is-scrolled{
-  padding-block: .5rem;
-}
-.site-header.is-scrolled .brand-logo{
-  height: 44px;
-}
-
-/* Nav spacing */
-.site-header .nav-list { gap: 1.25rem; }
-.site-header .nav-link{ padding: .6rem .85rem; }
-
-/* ===== Emphasise “Book Now” ===== */
-/* Add class="nav-cta" to that nav item link */
-.site-header .nav-link.nav-cta{
-  background: var(--brand-amber);
-  color: #1a2430;
-  border-radius: 999px;
-  padding: .55rem 1rem;
-  font-weight: 700;
-  box-shadow: 0 6px 16px rgba(239,167,26,.25);
-}
-.site-header .nav-link.nav-cta:hover,
-.site-header .nav-link.nav-cta:focus{
-  background: #cc8f16;
-  color: #0f1418;
-}
-.site-header .nav-link.nav-cta::after{ display:none; }  /* no underline effect */
-
-/* Footer widget area */
-.site-footer{
-  padding-top: 1.25rem;
-}
-.footer-widgets{
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 2rem 1rem 1rem;
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: 1fr;
-}
-.footer-widgets h6{
-  font-family: var(--heading-font);
-  margin: 0 0 .5rem 0;
-  color: #fff;
-}
-.footer-widgets a{ color: var(--brand-amber); }
-.footer-widgets a:hover{ color: var(--brand-amber-200); }
-
-@media (min-width: 768px){
-  .footer-widgets{ grid-template-columns: 1.2fr 1fr 1fr; }
-}
-
-/* Bottom bar bigger */
-.site-footer .bottom{
-  border-top: 1px solid var(--border);
-  padding: .9rem 1rem;
-  font-size: .95rem;
-}
-
-main.wrap{ max-width: var(--container-max); }
-
