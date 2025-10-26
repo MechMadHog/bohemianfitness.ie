@@ -35,7 +35,3 @@ title: Coming Soon
       <div class="gap" aria-hidden="true"></div>
   </main>
 
-
-<style>
-body: #1E3B4D!important;
-</style>
