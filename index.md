@@ -8,7 +8,6 @@ title: Coming Soon
     <div class="gap" aria-hidden="true"></div>
     <h1>Site Coming Soon</h1>
     <p class="tag">Join Our Tribe, Find Your Vibe</p>
-    <a class="cta cta-call" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
     <div class="copy">
           <p>
             Bohemian Fitness is led by Lorna, a health and wellness professional 🧘‍♀️🏋️‍♂️ with a
@@ -25,7 +24,10 @@ title: Coming Soon
           </p>
         <div class="gap" aria-hidden="true"></div>
     <div class="gap" aria-hidden="true"></div>
-    <a class="cta cta-secondary" href="tel:+353857432964" aria-label="Call Bohemian Fitness Now">Call Now</a>
+      <div class="cta-group">
+        <a class="cta cta-call" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
+        <a class="cta cta-secondary" href="tel:+353857432964" aria-label="Call Bohemian Fitness Now">Call Now</a>
+      </div>
     <div class="gap" aria-hidden="true"></div>
         <div class="gap" aria-hidden="true"></div>
     </div>

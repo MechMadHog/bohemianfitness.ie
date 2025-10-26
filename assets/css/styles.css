@@ -288,6 +288,24 @@ main.wrap > .cta-secondary{
   margin-bottom: 1rem;
 }
 
+/* Flex row with wrap + gap */
+.copy .cta-group{
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin: .5rem 0 1rem;
+}
+.copy .cta-group .cta{ margin: 0; }  /* spacing handled by gap */
+
+/* --- CTA: side-by-side inside .copy --- */
+.copy .cta,
+.copy .cta-secondary{
+  display: inline-flex;      /* sit next to each other */
+  width: auto;               /* no max-content block sizing */
+  margin: .5rem .6rem 1rem 0;/* gap between buttons */
+  vertical-align: middle;
+}
+
 /* Address centered under the column */
 main.wrap > .address{ text-align: center; }
 
