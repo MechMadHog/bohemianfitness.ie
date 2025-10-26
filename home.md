@@ -7,9 +7,9 @@ sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
 <!-- HERO -->
-<section class="hero text-center text-white">
-  <div class="container py-5">
-    <h1 class="display-4 fw-bold mb-3">Join Our Tribe</h1>
+<section class="section section--image" style="--bg:url('/assets/images/hero.jpg')">
+  <div class="container-80">
+        <h1 class="display-4 fw-bold mb-3">Join Our Tribe</h1>
     <p class="lead mb-4">Find your vibe with strength, conditioning, and wellness in Mullingar.</p>
     <div class="d-flex gap-3 justify-content-center">
       <a href="{{ '/programs/' | relative_url }}" class="btn btn-primary btn-lg">View Programs</a>
