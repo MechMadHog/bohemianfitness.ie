@@ -344,3 +344,44 @@ main.wrap > .cta-secondary{
 }
 .timetable td{background:#fff!important; color:#212529!important;}
 .timetable{--bs-table-border-color:#e9ecef;}
+
+/* =========================================================
+   80% content width with 10% margins either side (desktop)
+   ========================================================= */
+@media (min-width: 1200px) {
+  /* Make every Bootstrap container use the 80/10/10 canvas */
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: none;        /* remove Bootstrap cap */
+    width: 80vw;            /* 80% of viewport width */
+    margin-inline: auto;    /* leaves ~10vw each side */
+    padding-left:  calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+  }
+
+  /* If you have non-Bootstrap wrappers, align them too */
+  main.wrap {
+    max-width: none;
+    width: 80vw;
+    margin-inline: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Optional: use on sections you want to align to canvas
+     when they currently use container-fluid or custom wrappers */
+  .canvas-80,
+  .container-wide.canvas-80,
+  .container-fluid.canvas-80 {
+    max-width: none;
+    width: 80vw;
+    margin-inline: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+/* Keep the nicer breathing room */
+.container, .container-fluid, .row {
+  --bs-gutter-x: 2rem;
+}
