@@ -34,3 +34,8 @@ title: Coming Soon
       <div class="address">Austin Friars St, Mullingar, Co. Westmeath, N91 X221</div>
       <div class="gap" aria-hidden="true"></div>
   </main>
+
+
+<style>
+body: #1E3B4D!important;
+</style>
