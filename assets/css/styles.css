@@ -258,6 +258,8 @@ main.wrap{
 
 /* === Coming Soon column fix === */
 
+/* === Coming Soon column + alignment (merged) === */
+
 /* Put all key blocks on the same centered column */
 main.wrap > h1,
 main.wrap > .tag,
@@ -265,20 +267,29 @@ main.wrap > .copy,
 main.wrap > .address,
 main.wrap > .cta,
 main.wrap > .cta-secondary{
-  max-width: var(--copy-max);        /* same width as the paragraph column */
+  max-width: var(--copy-max);   /* same width as the paragraph column */
   margin-left: auto;
   margin-right: auto;
-  text-align: left;                  /* left-align content inside the column */
 }
 
-/* Make CTAs line up under the heading instead of “floating” */
+/* Heading + tagline centered; copy stays left-aligned inside */
+main.wrap > h1,
+main.wrap > .tag{ text-align: center; }
+main.wrap > .copy{ text-align: left; }
+
+/* CTAs align to the left edge of the column (under heading/tag) */
 main.wrap > .cta,
 main.wrap > .cta-secondary{
-  display: block;                    /* makes the button sit at the column’s left edge */
-  width: max-content;                /* keeps the button snug to its text */
+  display: block;               /* sits at the column’s left edge */
+  width: max-content;           /* snug to text */
+  margin-left: 0;               /* override auto-centering */
+  margin-right: auto;
   margin-top: .5rem;
   margin-bottom: 1rem;
 }
+
+/* Address centered under the column */
+main.wrap > .address{ text-align: center; }
 
 /* Logo spacing tweak to balance top rhythm */
 .landing-logo{
