@@ -30,16 +30,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Headings inherit colour so they switch on dark/image sections */
 h1,h2,h3,h4,h5,h6,
 .display-1,.display-2,.display-3,.display-4,.display-5,.display-6 {
   font-family: var(--heading-font);
   letter-spacing: .02em;
   line-height: 1.15;
-  color: var(--text-dark);
+  color: inherit; /* was var(--text-dark) */
 }
 
 a { color: var(--brand-amber); text-decoration: none; }
 a:hover { color: var(--brand-amber-200); }
+
+/* Muted text default (light sections) */
+.text-muted { color: #5a6a76; }
 
 /* ------------------ Header ------------------ */
 .site-header {
@@ -70,14 +74,18 @@ a:hover { color: var(--brand-amber-200); }
 .section {
   padding-block: clamp(2rem,4vw,5rem);
 }
+
+/* DARK section: flip text + links + muted for contrast */
 .section--dark {
   background: var(--brand-teal-700);
   color: var(--text-light);
 }
-.section--light {
-  background: #ffffff;
-  color: var(--text-dark);
-}
+.section--dark a { color: var(--brand-amber-200); }
+.section--dark a:hover { color: var(--brand-amber); }
+.section--dark .text-muted,
+.section--dark .lead { color: rgba(255,255,255,.78); }
+
+/* IMAGE / GRADIENT section: same contrast behaviour */
 .section--image {
   background-size: cover;
   background-position: center;
@@ -90,6 +98,31 @@ a:hover { color: var(--brand-amber-200); }
   background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.55));
 }
 .section--image > * { position:relative; z-index:1; }
+.section--image a { color: var(--brand-amber-200); }
+.section--image a:hover { color: var(--brand-amber); }
+.section--image .text-muted,
+.section--image .lead { color: rgba(255,255,255,.8); }
+
+/* LIGHT section (explicit reset if needed) */
+.section--light {
+  background: #ffffff;
+  color: var(--text-dark);
+}
+.section--light .text-muted,
+.section--light .lead { color: #5a6a76; }
+.section--light a { color: var(--brand-amber); }
+.section--light a:hover { color: var(--brand-amber-200); }
+
+/* Quick utilities for edge cases */
+.on-dark  { color: var(--text-light) !important; }
+.on-dark .text-muted { color: rgba(255,255,255,.75) !important; }
+.on-dark a { color: var(--brand-amber-200) !important; }
+.on-dark a:hover { color: var(--brand-amber) !important; }
+
+.on-light { color: var(--text-dark) !important; }
+.on-light .text-muted { color: #5a6a76 !important; }
+.on-light a { color: var(--brand-amber) !important; }
+.on-light a:hover { color: var(--brand-amber-200) !important; }
 
 /* ------------------ Buttons ------------------ */
 .btn-primary {
