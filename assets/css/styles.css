@@ -75,6 +75,13 @@ a:hover { color: var(--brand-amber-200); }
 .navbar .nav-link { padding: .5rem .75rem; font-weight: 600; }
 .navbar .dropdown-menu-dark { --bs-dropdown-link-active-bg: var(--brand-teal-700); }
 
+/* Keep nav above hero overlays and content */
+.navbar { position: relative; z-index: 1100; }
+/* Ensure gradient overlays never catch clicks */
+.section--image::before { pointer-events: none; }
+/* Dropdowns above everything else */
+.dropdown-menu { z-index: 1200; }
+
 
 /* ------------------ Sections ------------------ */
 .section {
