@@ -255,3 +255,42 @@ main.wrap{
 .cta.cta-secondary:hover{
   color:#0f1418; border-color:var(--brand-amber); background:rgba(239,167,26,.18);
 }
+
+/* === Coming Soon column fix === */
+
+/* Put all key blocks on the same centered column */
+main.wrap > h1,
+main.wrap > .tag,
+main.wrap > .copy,
+main.wrap > .address,
+main.wrap > .cta,
+main.wrap > .cta-secondary{
+  max-width: var(--copy-max);        /* same width as the paragraph column */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;                  /* left-align content inside the column */
+}
+
+/* Make CTAs line up under the heading instead of “floating” */
+main.wrap > .cta,
+main.wrap > .cta-secondary{
+  display: block;                    /* makes the button sit at the column’s left edge */
+  width: max-content;                /* keeps the button snug to its text */
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+/* Logo spacing tweak to balance top rhythm */
+.landing-logo{
+  max-width: 260px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Paragraph rhythm inside the copy block */
+.copy p{ margin: 0 0 1rem 0; }
+.copy p:last-child{ margin-bottom: 0; }
+
+/* Slightly widen copy on very large screens so it doesn’t feel cramped */
+@media (min-width: 1200px){
+  :root{ --copy-max: 66ch; }
+}
