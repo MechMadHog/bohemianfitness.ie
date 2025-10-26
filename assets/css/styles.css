@@ -323,3 +323,96 @@ main.wrap > .address{ text-align: center; }
 @media (min-width: 1200px){
   :root{ --copy-max: 66ch; }
 }
+
+/* ===== Scale & rhythm ===== */
+
+/* Wider page canvas */
+:root{
+  --container-max: 1280px;   /* was 1100 */
+  --copy-max: 70ch;          /* was 62–66ch */
+}
+
+/* Base text size bump */
+html { font-size: 16px; }                 /* fallback */
+@media (min-width: 768px){ html { font-size: 17px; } }
+@media (min-width: 1200px){ html { font-size: 18px; } }  /* paragraphs will read ~18px */
+
+/* Body/copy line-height */
+.copy{ line-height: 1.7; }
+
+/* ===== Header: taller with bigger logo ===== */
+.site-header{
+  padding-block: .75rem;                  /* taller bar */
+}
+@media (min-width: 992px){
+  .site-header{ padding-block: 1rem; }    /* desktop */
+}
+
+/* Brand logo size */
+.brand-logo{ height: 48px; }              /* was ~36; tweak to taste */
+@media (min-width: 992px){
+  .brand-logo{ height: 56px; }
+}
+
+/* When scrolled, keep it a touch smaller but not tiny */
+.site-header.is-scrolled{
+  padding-block: .5rem;
+}
+.site-header.is-scrolled .brand-logo{
+  height: 44px;
+}
+
+/* Nav spacing */
+.site-header .nav-list { gap: 1.25rem; }
+.site-header .nav-link{ padding: .6rem .85rem; }
+
+/* ===== Emphasise “Book Now” ===== */
+/* Add class="nav-cta" to that nav item link */
+.site-header .nav-link.nav-cta{
+  background: var(--brand-amber);
+  color: #1a2430;
+  border-radius: 999px;
+  padding: .55rem 1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(239,167,26,.25);
+}
+.site-header .nav-link.nav-cta:hover,
+.site-header .nav-link.nav-cta:focus{
+  background: #cc8f16;
+  color: #0f1418;
+}
+.site-header .nav-link.nav-cta::after{ display:none; }  /* no underline effect */
+
+/* Footer widget area */
+.site-footer{
+  padding-top: 1.25rem;
+}
+.footer-widgets{
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+.footer-widgets h6{
+  font-family: var(--heading-font);
+  margin: 0 0 .5rem 0;
+  color: #fff;
+}
+.footer-widgets a{ color: var(--brand-amber); }
+.footer-widgets a:hover{ color: var(--brand-amber-200); }
+
+@media (min-width: 768px){
+  .footer-widgets{ grid-template-columns: 1.2fr 1fr 1fr; }
+}
+
+/* Bottom bar bigger */
+.site-footer .bottom{
+  border-top: 1px solid var(--border);
+  padding: .9rem 1rem;
+  font-size: .95rem;
+}
+
+main.wrap{ max-width: var(--container-max); }
+
