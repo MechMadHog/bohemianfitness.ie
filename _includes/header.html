@@ -1,40 +1,43 @@
 <header class="site-header">
-  <nav class="container d-flex align-items-center justify-content-between py-2">
-    <a class="brand d-flex align-items-center gap-2 text-decoration-none" href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/branding/logo.png' | relative_url }}" alt="Logo" class="brand-logo" height="50">
-    </a>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Bohemian Fitness" height="40" class="brand-logo">
+      </a>
 
-    <!-- Hamburger -->
-    <button class="navbar-toggler d-lg-none" type="button"
-      data-bs-toggle="collapse" data-bs-target="#navMenu"
-      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="hamburger" aria-hidden="true"></span>
-      <span class="visually-hidden">Menu</span>
-    </button>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Menu -->
-    <div id="navMenu" class="collapse d-lg-block">
-      <ul class="nav-list d-flex flex-column flex-lg-row align-items-start align-items-lg-center ms-lg-auto mb-0">
-        <!-- <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="{{ '/home/' | relative_url }}">Home</a></li> <!-- Delete when Built -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ '/about/' | relative_url }}" id="aboutDropdown"
-            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <li><a class="dropdown-item" href="{{ '/about/'         | relative_url }}">About Bohemian Fitness</a></li>
-            <li><a class="dropdown-item" href="{{ '/our-gym/'       | relative_url }}">Our Gym</a></li>
-            <li><a class="dropdown-item" href="{{ '/team/'          | relative_url }}">Meet The Team</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/classes/' | relative_url }}">Classes</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/timetables/' | relative_url }}">Timetables</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/pricing/' | relative_url }}">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/blog/' | relative_url }}">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ '/contact/' | relative_url }}">Contact</a></li>
-        <li class="nav-item"><a class="nav-link nav-cta" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Book Now</a></li>
-      </ul>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <!-- <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="{{ '/home/' | relative_url }}">Home</a></li> <!-- Delete when Built -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="{{ '/about/'   | relative_url }}">About Bohemian Fitness</a></li>
+              <li><a class="dropdown-item" href="{{ '/our-gym/' | relative_url }}">Our Gym</a></li>
+              <li><a class="dropdown-item" href="{{ '/team/'    | relative_url }}">Meet The Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="{{ '/classes/'    | relative_url }}">Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ '/timetables/' | relative_url }}">Timetables</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ '/pricing/'    | relative_url }}">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ '/contact/'    | relative_url }}">Contact</a></li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary px-3 py-2"
+               href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>

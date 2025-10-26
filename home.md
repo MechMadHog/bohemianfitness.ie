@@ -113,6 +113,58 @@ sitemap: false               # keeps it out of jekyll-sitemap
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="section section--dark">
+  <div class="container">
+    <header class="text-center mb-4">
+      <h2 class="mb-1">What Our Members Say</h2>
+      <p class="text-muted mb-0">Real feedback from the Bohemian Fitness community.</p>
+    </header>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <figure class="card border-0 shadow-sm mx-auto" style="max-width: 720px;">
+            <blockquote class="card-body mb-0">
+              <p class="mb-2">“Strength focused with proper coaching cues—best gym experience I’ve had.”</p>
+              <figcaption class="small text-muted">— Aisling M.</figcaption>
+            </blockquote>
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="card border-0 shadow-sm mx-auto" style="max-width: 720px;">
+            <blockquote class="card-body mb-0">
+              <p class="mb-2">“Sessions scale to any level. I finally feel consistent and confident.”</p>
+              <figcaption class="small text-muted">— Conor D.</figcaption>
+            </blockquote>
+          </figure>
+        </div>
+        <div class="carousel-item">
+          <figure class="card border-0 shadow-sm mx-auto" style="max-width: 720px;">
+            <blockquote class="card-body mb-0">
+              <p class="mb-2">“Postpartum class was a lifesaver—welcoming, safe, and effective.”</p>
+              <figcaption class="small text-muted">— Laura K.</figcaption>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-indicators mt-3 position-static">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- CONTACT -->
 <section class="py-5">
   <div class="container text-center">
