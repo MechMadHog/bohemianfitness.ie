@@ -17,7 +17,17 @@
       <ul class="nav-list d-flex flex-column flex-lg-row align-items-start align-items-lg-center ms-lg-auto mb-0">
         <!-- <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li> -->
         <li class="nav-item"><a class="nav-link" href="{{ '/home/' | relative_url }}">Home</a></li> <!-- Delete when Built -->
-        <li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ '/about/' | relative_url }}" id="aboutDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item" href="{{ '/about/'         | relative_url }}">About Bohemian Fitness</a></li>
+            <li><a class="dropdown-item" href="{{ '/our-gym/'       | relative_url }}">Our Gym</a></li>
+            <li><a class="dropdown-item" href="{{ '/team/'          | relative_url }}">Meet The Team</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="{{ '/classes/' | relative_url }}">Classes</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ '/timetables/' | relative_url }}">Timetables</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ '/pricing/' | relative_url }}">Pricing</a></li>
