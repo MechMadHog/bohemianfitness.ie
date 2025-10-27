@@ -1,70 +1,85 @@
 ---
 layout: default
-title: About Bohemian Fitness
-permalink: /about/
+title: About
+permalink: /about-us/
 noindex: true                # adds the meta robots tag
 sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
-<section class="py-5 page-min">
+<!-- 1) What is Bohemian Fitness -->
+<section class="section section--light">
   <div class="container">
-    <header class="mb-4 text-center">
-      <h1 class="mb-2">About Bohemian Fitness</h1>
-      <p class="text-muted mb-0">Strength, community, and a practical path to feeling good.</p>
-    </header>
-    <div class="row g-4 align-items-start">
-      <div class="col-12 col-lg-7">
-        <p>
-          Bohemian Fitness is a small, welcoming gym in Mullingar led by <strong>Lorna</strong>, a coach with a
-          <strong>BSc (Hons) in Sports Strength &amp; Conditioning</strong> and specialist training in pre and post-natal coaching.
-          We focus on smart programming, sensible progress, and accountability that fits real life.
-        </p>
-        <p>
-          Sessions are small group by design, so you get coaching cues, good form, and a plan that can be adapted to your level.
-          Beginners are always welcome. If you want structure and a friendly crew to train with, you’ll feel at home here.
-        </p>
-        <div class="d-flex flex-wrap gap-2">
-          <a class="btn btn-primary" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Join Today</a>
-          <a class="btn btn-outline-secondary" href="{{ '/contact/' | relative_url }}">Message the Coach</a>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <h2 class="h3 mb-2">What is Bohemian Fitness</h2>
+        <p class="mb-3">Small-group strength & conditioning with friendly, accountable coaching. Scales to any level and fits real life.</p>
+        <div class="d-flex gap-2">
+          <a class="btn btn-primary btn-sm" href="{{ '/about-us/bohemian-fitness/' | relative_url }}">Read more</a>
+          <a class="btn btn-outline-secondary btn-sm" href="{{ '/timetables/' | relative_url }}">See timetables</a>
         </div>
       </div>
-      <div class="col-12 col-lg-5">
-        <div class="p-4 bg-light rounded-3 h-100">
-          <h2 class="h5">What to expect</h2>
-          <ul class="mb-0">
-            <li>Strength &amp; Conditioning with clear progress tracking</li>
-            <li>Options for all levels… scalable sessions</li>
-            <li>Mobility, core, and conditioning balanced through the week</li>
-            <li>Postpartum support with BYOB classes</li>
-            <li>Friendly community and no drama</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr class="my-5">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="p-4 bg-light rounded-3 h-100">
-          <h3 class="h6 text-uppercase text-muted mb-2">Location</h3>
-          <p class="mb-0">Austin Friars St, Mullingar, Co. Westmeath, N91 X221</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 bg-light rounded-3 h-100">
-          <h3 class="h6 text-uppercase text-muted mb-2">Timetables</h3>
-          <p class="mb-3">Morning and evening sessions through the week.</p>
-          <a class="fw-semibold text-decoration-none" href="{{ '/timetables/' | relative_url }}">View timetables →</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 bg-light rounded-3 h-100">
-          <h3 class="h6 text-uppercase text-muted mb-2">Start now</h3>
-          <p class="mb-3">Book a trial and we will guide your first steps.</p>
-          <a class="btn btn-outline-primary btn-sm" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Book a trial</a>
-        </div>
+      <div class="col-lg-5">
+        <div class="ratio ratio-16x9 bg-light rounded"></div>
       </div>
     </div>
   </div>
 </section>
-
-
+<!-- 2) Meet the Team -->
+<section class="section section--dark">
+  <div class="container">
+    <header class="text-center mb-4">
+      <h2 class="h3 mb-1">Meet the Team</h2>
+      <p class="text-muted mb-0">Coaches who care about good form, smart progress, and real-world results.</p>
+    </header>
+    <div class="row g-4">
+      <!-- Lorna -->
+      <div class="col-md-6 col-lg-4">
+        <article class="card team-card h-100">
+          <img class="team-photo" src="{{ '/assets/images/team/lorna.jpg' | relative_url }}" alt="Lorna — Head Coach">
+          <div class="card-body">
+            <h3 class="h5 mb-1">Lorna</h3>
+            <p class="text-muted small mb-3">Head Coach · BSc (Hons) Strength &amp; Conditioning</p>
+            <a class="btn btn-sm btn-primary" href="{{ '/team/lorna/' | relative_url }}">See more</a>
+          </div>
+        </article>
+      </div>
+      <!-- Claudio -->
+      <div class="col-md-6 col-lg-4">
+        <article class="card team-card h-100">
+          <img class="team-photo" src="{{ '/assets/images/team/claudio.jpg' | relative_url }}" alt="Claudio — Coach">
+          <div class="card-body">
+            <h3 class="h5 mb-1">Claudio</h3>
+            <p class="text-muted small mb-3">Coach</p>
+            <a class="btn btn-sm btn-primary" href="{{ '/team/claudio/' | relative_url }}">See more</a>
+          </div>
+        </article>
+      </div>
+      <!-- Sarah -->
+      <div class="col-md-6 col-lg-4">
+        <article class="card team-card h-100">
+          <img class="team-photo" src="{{ '/assets/images/team/sarah.jpg' | relative_url }}" alt="Sarah — Coach">
+          <div class="card-body">
+            <h3 class="h5 mb-1">Sarah</h3>
+            <p class="text-muted small mb-3">Coach</p>
+            <a class="btn btn-sm btn-primary" href="{{ '/team/sarah/' | relative_url }}">See more</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 3) Our Gym -->
+<section class="section section--light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7 order-lg-2">
+        <h2 class="h3 mb-2">Our Gym</h2>
+        <p class="mb-3">A practical space with racks, kettlebells, suspension trainers and a conditioning zone—laid out so classes flow.</p>
+        <a class="btn btn-sm btn-primary" href="{{ '/about-us/our-gym/' | relative_url }}">Read more</a>
+      </div>
+      <div class="col-lg-5 order-lg-1">
+        <div class="ratio ratio-16x9 bg-light rounded"></div>
+      </div>
+    </div>
+  </div>
+</section>

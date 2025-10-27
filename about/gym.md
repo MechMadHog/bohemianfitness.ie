@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Our Gym
-permalink: /our-gym/
+permalink: /about-us/our-gym/
 noindex: true                # adds the meta robots tag
 sitemap: false               # keeps it out of jekyll-sitemap
 ---

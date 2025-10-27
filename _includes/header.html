@@ -17,25 +17,11 @@
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <!-- <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li> -->
           <li class="nav-item"><a class="nav-link" href="{{ '/home/' | relative_url }}">Home</a></li> <!-- Delete when Built -->
-
-          <!-- Dropdown needs .dropdown + .dropdown-toggle + data-bs-toggle="dropdown" -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="aboutDropdown">
-              <li><a class="dropdown-item" href="{{ '/about/'   | relative_url }}">About Bohemian Fitness</a></li>
-              <li><a class="dropdown-item" href="{{ '/our-gym/' | relative_url }}">Our Gym</a></li>
-              <li><a class="dropdown-item" href="{{ '/team/'    | relative_url }}">Meet The Team</a></li>
-            </ul>
-          </li>
-
+          <li class="nav-item"><a class="nav-link" href="{{ '/about/'    | relative_url }}">About</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ '/classes/'    | relative_url }}">Classes</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ '/timetables/' | relative_url }}">Timetables</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ '/pricing/'    | relative_url }}">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ '/contact/'    | relative_url }}">Contact</a></li>
-
           <li class="nav-item ms-lg-2">
             <a class="btn btn-primary px-3 py-2"
               href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">
