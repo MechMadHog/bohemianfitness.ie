@@ -15,7 +15,7 @@ photo_portrait: /assets/images/team/lorna-portrait-1200.webp
 
 <section class="section section--light page-min">
   <div class="container">
-    <a class="small text-muted d-inline-block mb-3 text-decoration-none" href="{{ '/about/' | relative_url }}">← Back to About</a>
+    <a class="small text-muted d-inline-block mb-3 text-decoration-none" href="{{ '/about-us/' | relative_url }}">← Back to About</a>
     <div class="row g-4 align-items-start">
       <!-- Portrait / quick facts -->
       <aside class="col-lg-4">
