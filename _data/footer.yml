@@ -1,0 +1,26 @@
+# _data/footer.yml
+col1:
+  title: Visit Us
+  html: >-
+      <p>Mon–Fri: 06:30–21:00<br>Sat: 08:00–14:00<br>Sun: Closed</p>
+
+col2:
+  title: Quick Links
+  links:
+    - { text: Home, url: '/' }
+    - { text: Programmes, url: '/programmes/' }
+    - { text: Membership, url: '/membership/' }
+    - { text: Contact, url: '/contact/' }
+
+col3:
+  title: Contact
+  html: >-
+    <p>Email: <a href="mailto:info@bohemianfitness.ie">info@bohemianfitness.ie</a><br>
+    Phone: <a href="tel:+3530000000">+353 00 000 0000</a></p>
+
+col4:
+  title: Follow
+  html: >-
+    <p><a href="#">Instagram</a><br><a href="#">Facebook</a></p>
+
+copy: "© {{ site.time | date: '%Y' }} Bohemian Fitness. All rights reserved."
