@@ -7,11 +7,11 @@ It serves as the official online presence of *Bohemian Fitness, Mullingar*, high
 
 ## 🔧 Tech Stack
 
-- **Jekyll** — Static site generator
-- **Bootstrap 5.3** — Responsive grid, components & JS features
-- **Vanilla CSS + JS** — No Sass or build pipeline
-- **GitHub Pages** — Hosting
-- **YAML Data Files** — For footer, navigation, and content control
+- **Jekyll** - Static site generator
+- **Bootstrap 5.3** - Responsive grid, components & JS features
+- **Vanilla CSS + JS** - No Sass or build pipeline
+- **GitHub Pages** - Hosting
+- **YAML Data Files** - For footer, navigation, and content control
 
 ---
 
