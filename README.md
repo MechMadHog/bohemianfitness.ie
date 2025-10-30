@@ -1,4 +1,4 @@
-# 🏋️ Bohemian Fitness — Jekyll + Bootstrap Website
+# 🏋️ Bohemian Fitness - Jekyll + Bootstrap Website
 
 This repository contains the complete source code for the **Bohemian Fitness** website; a static, image-rich, responsive site built with **Jekyll** and **Bootstrap 5** (no Sass).  
 It serves as the official online presence of *Bohemian Fitness, Mullingar*, highlighting our gym, team, classes, and membership details.
