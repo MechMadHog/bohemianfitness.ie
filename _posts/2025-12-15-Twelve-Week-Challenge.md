@@ -5,7 +5,7 @@ description: "A gentle, community-driven journey of movement, mindfulness, nouri
 categories: [Fitness, Wellness, Community]
 tags: [bohemian-fitness, challenge, movement, mindfulness, nutrition, community]
 featured: true
-image: /assets/images/blog/Twele-Week-Challenge.png
+image: /assets/images/blog/Twelve-Week-Challenge.png
 ---
 
 
