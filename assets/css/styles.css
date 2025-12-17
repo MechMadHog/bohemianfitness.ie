@@ -95,8 +95,11 @@ a:hover { color: var(--brand-amber-200); }
 }
 .section--dark a { color: var(--brand-amber-200); }
 .section--dark a:hover { color: var(--brand-amber); }
-.section--dark .text-muted,
 .section--dark .lead { color: rgba(255,255,255,.78); }
+.section--dark .text-muted {
+  color: var(--brand-amber-200);
+}
+
 
 /* IMAGE / GRADIENT section: same contrast behaviour */
 .section--image {
@@ -125,6 +128,14 @@ a:hover { color: var(--brand-amber-200); }
 .section--light .lead { color: #5a6a76; }
 .section--light a { color: var(--brand-amber); }
 .section--light a:hover { color: var(--brand-amber-200); }
+
+.container--wide {
+  max-width: 1100px;
+}
+
+.container--narrow {
+  max-width: 860px;
+}
 
 /* Quick utilities for edge cases */
 .on-dark  { color: var(--text-light) !important; }
