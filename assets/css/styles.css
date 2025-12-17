@@ -96,7 +96,7 @@ a:hover { color: var(--brand-amber-200); }
 .section--dark a { color: var(--brand-amber-200); }
 .section--dark a:hover { color: var(--brand-amber); }
 .section--dark .lead { color: rgba(255,255,255,.78); }
-.section--dark .text-muted {
+.text-muted {
   color: var(--brand-amber-200);
 }
 
