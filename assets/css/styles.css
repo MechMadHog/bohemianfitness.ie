@@ -122,7 +122,7 @@ a:hover { color: var(--brand-amber-200); }
   color: var(--text-dark);
 }
 .section--light .text-muted,
-.section--light .lead { color: #5a6a76; }
+.section--light .lead { color: var(--brand-amber-200) }
 .section--light a { color: var(--brand-amber); }
 .section--light a:hover { color: var(--brand-amber-200); }
 
