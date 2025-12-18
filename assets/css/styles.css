@@ -42,9 +42,6 @@ h1,h2,h3,h4,h5,h6,
 a { color: var(--brand-amber); text-decoration: none; }
 a:hover { color: var(--brand-amber-200); }
 
-/* Muted text default (light sections) */
-.text-muted { color: #5a6a76; }
-
 /* ------------------ Header ------------------ */
 .site-header {
   background: var(--brand-teal);
@@ -96,7 +93,7 @@ a:hover { color: var(--brand-amber-200); }
 .section--dark a { color: var(--brand-amber-200); }
 .section--dark a:hover { color: var(--brand-amber); }
 .section--dark .lead { color: rgba(255,255,255,.78); }
-.text-muted {
+.section--dark .text-muted {
   color: var(--brand-amber-200);
 }
 
