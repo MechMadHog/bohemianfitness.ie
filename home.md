@@ -217,19 +217,6 @@ sitemap: false               # keeps it out of jekyll-sitemap
   </div>
 </section>
 
-
-<!-- CONTACT -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="h3 mb-1">Ready to start</h2>
-    <p class="text-muted mb-3">Tell us your goals and we will guide you from day one.</p>
-    <div class="d-flex gap-2 justify-content-center">
-      <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Message the Coach</a>
-      <a class="btn btn-outline-secondary" href="{{ '/about/' | relative_url }}">About Us</a>
-    </div>
-  </div>
-</section>
-
 <!-- Page styles to match “Zeus” hero look -->
 <style>
   .hero {
