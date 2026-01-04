@@ -121,46 +121,99 @@ sitemap: false               # keeps it out of jekyll-sitemap
       <p class="text-muted mb-0">Real feedback from the Bohemian Fitness community.</p>
     </header>
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <figure class="card border-0 shadow-sm mx-auto" style="max-width: 720px;">
-            <blockquote class="card-body mb-0">
-              <p class="mb-2">“Strength focused with proper coaching cues—best gym experience I’ve had.”</p>
-              <figcaption class="small text-muted">— Aisling M.</figcaption>
-            </blockquote>
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure class="card border-0 shadow-sm mx-auto" style="max-width: 720px;">
-            <blockquote class="card-body mb-0">
-              <p class="mb-2">“Sessions scale to any level. I finally feel consistent and confident.”</p>
-              <figcaption class="small text-muted">— Conor D.</figcaption>
-            </blockquote>
-          </figure>
-        </div>
-        <div class="carousel-item">
-          <figure class="card border-0 shadow-sm mx-auto" style="max-width: 720px;">
-            <blockquote class="card-body mb-0">
-              <p class="mb-2">“Postpartum class was a lifesaver—welcoming, safe, and effective.”</p>
-              <figcaption class="small text-muted">— Laura K.</figcaption>
-            </blockquote>
-          </figure>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <div class="carousel-indicators mt-3 position-static">
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “After having a C-section and not knowing how to rebuild my strength, Lorna gave me the knowledge and confidence to improve. No pressure, no mum guilt, just support. During Covid it also helped me connect with other mums. Everything was adapted and done at my own pace.”
+          </p>
+          <figcaption class="small text-muted">— Sinead H.</figcaption>
+        </blockquote>
+      </figure>
     </div>
+    <div class="carousel-item">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “An incredibly friendly and supportive gym. The workouts are varied and challenging, and you can see real progress. If you’re nervous starting out or new to the area, definitely pop in. I’m stronger, more confident, and surrounded by great people.”
+          </p>
+          <figcaption class="small text-muted">— Siobhán D.</figcaption>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “Lorna’s gym is fantastic. The classes are great fun and always make you want to come back. She adjusts everything to suit each person, from beginners to pros.”
+          </p>
+          <figcaption class="small text-muted">— Richard V.</figcaption>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “I joined feeling very apprehensive with back issues and couldn’t hold a plank for more than 15 seconds. Now I can complete a 1-minute AMRAP. No judgement, just encouragement and support. Class times are brilliant too.”
+          </p>
+          <figcaption class="small text-muted">— Lorraine H.</figcaption>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “One of the friendliest gyms I’ve ever been to, with a great range of classes for all levels. Would definitely recommend.”
+          </p>
+          <figcaption class="small text-muted">— Mark K.</figcaption>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “I cannot recommend Lorna enough. She has a wealth of knowledge and experience. The gym is spotless, classes are varied, and exercises are always adapted. The trainers and members are incredibly welcoming, which makes a huge difference for gym confidence.”
+          </p>
+          <figcaption class="small text-muted">— Chloe C.</figcaption>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="carousel-item">
+      <figure class="card border-0 shadow-sm mx-auto" style="max-width:720px;">
+        <blockquote class="card-body mb-0">
+          <p class="mb-2">
+            “Absolutely solid all round. Lorna genuinely makes time for everyone. If you’re thinking of going, just go.”
+          </p>
+          <figcaption class="small text-muted">— Keith M.</figcaption>
+        </blockquote>
+      </figure>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <div class="carousel-indicators mt-3 position-static">
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-slide-to="2" data-bs-target="#testimonialCarousel"></button>
+    <button type="button" data-bs-slide-to="3" data-bs-target="#testimonialCarousel"></button>
+    <button type="button" data-bs-slide-to="4" data-bs-target="#testimonialCarousel"></button>
+    <button type="button" data-bs-slide-to="5" data-bs-target="#testimonialCarousel"></button>
+    <button type="button" data-bs-slide-to="6" data-bs-target="#testimonialCarousel"></button>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -168,7 +221,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
 <!-- CONTACT -->
 <section class="py-5">
   <div class="container text-center">
-    <h2 class="h3 mb-2">Ready to start</h2>
+    <h2 class="h3 mb-1">Ready to start</h2>
     <p class="text-muted mb-3">Tell us your goals and we will guide you from day one.</p>
     <div class="d-flex gap-2 justify-content-center">
       <a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Message the Coach</a>
