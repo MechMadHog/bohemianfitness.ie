@@ -92,19 +92,40 @@ sitemap: false               # keeps it out of jekyll-sitemap
       <div class="col-lg-6">
         <h2 class="fw-bold mb-2">Client Reviews</h2>
         <p class="mb-4">Real words from our community.</p>
-        <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-          <!-- Set site.google_reviews_embed_url in _config.yml -->
-          <iframe src="{{ site.google_reviews_embed_url }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="d-flex flex-wrap gap-2">
+          <a
+            class="btn btn-dark"
+            href="https://www.google.com/search?q=bohemian+fitness&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2SlKoNpcalHfafoM2-erWVeZijsgB9Zn683I3g6CQ4Q9NrybWCCYUknStEIpcbmrocw3ZU%3D&uds=AOm0WdFRPqUD_qV0CCvuvWYUkCS3RYYS37ENtAVcEXekDg6g18pguO-1W2orbzF53P6AkMTbee1tWtZ4BVMc4JRASlSx-H5XomoZr6pIXCeH5NPXTP2kzM8"
+            target="_blank"
+            rel="noopener"
+          >
+            Read Google Reviews
+          </a>
+          <a
+            class="btn btn-outline-dark"
+            href="https://www.google.com/search?q=bohemian+fitness&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2SlKoNpcalHfafoM2-erWVeZijsgB9Zn683I3g6CQ4Q9NrybWCCYUknStEIpcbmrocw3ZU%3D&uds=AOm0WdFRPqUD_qV0CCvuvWYUkCS3RYYS37ENtAVcEXekDg6g18pguO-1W2orbzF53P6AkMTbee1tWtZ4BVMc4JRASlSx-H5XomoZr6pIXCeH5NPXTP2kzM8"
+            target="_blank"
+            rel="noopener"
+          >
+            Leave a Review
+          </a>
         </div>
       </div>
       <div class="col-lg-6">
         <h2 class="fw-bold mb-3">See the Gym</h2>
         <p class="mb-4">A quick look at our space and classes.</p>
+        {% assign gallery_images = "Mini_Gallery_01.jpg|Mini_Gallery_02.JPG|Mini_Gallery_03.JPG|Mini_Gallery_04.JPG|Mini_Gallery_05.JPG|Mini_Gallery_06.JPG|Mini_Gallery_07.JPG|Mini_Gallery_08.JPG|Mini_Gallery_09.JPG|Mini_Gallery_10.JPG|Mini_Gallery_11.JPG|Mini_Gallery_12.JPG|Mini_Gallery_13.jpg|Mini_Gallery_14.JPG|Mini_Gallery_15.jpg|Mini_Gallery_16.jpg" | split: "|" %}
         <div class="row g-3">
-          {% for i in (1..6) %}
+          {% for img in gallery_images limit: 6 %}
             <div class="col-6">
-              <!-- Replace bg-secondary with real images when ready -->
-              <div class="ratio ratio-4x3 bg-secondary rounded"></div>
+              <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm bg-dark">
+                <img
+                  src="/assets/images/{{ img }}"
+                  alt="Bohemian Fitness gallery image {{ forloop.index }}"
+                  loading="lazy"
+                  style="width:100%;height:100%;object-fit:cover;"
+                >
+              </div>
             </div>
           {% endfor %}
         </div>
