@@ -168,6 +168,16 @@ a:hover { color: var(--brand-amber-200); }
   background: var(--brand-teal);
   color: var(--text-light);
   padding-block: 2rem;
+  padding: 0;
 }
 .site-footer a { color: var(--brand-amber); }
 .site-footer a:hover { color: var(--brand-amber-200); }
+
+.footer-widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
