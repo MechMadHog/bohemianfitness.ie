@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Bohemian Fitness
-permalink: /about-us/bohemian-fitness/
+permalink: /about-us/
 noindex: true                # adds the meta robots tag
 sitemap: false               # keeps it out of jekyll-sitemap
 ---
