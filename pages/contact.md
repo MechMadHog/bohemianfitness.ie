@@ -21,7 +21,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
             <!-- Logo -->
             <div class="text-center text-lg-start" style="min-width: 160px;">
               <!-- Replace src with your temp logo -->
-              <img src="{{ '/assets/images/bf-temp-logo.png' | relative_url }}" alt="Bohemian Fitness logo" class="img-fluid" style="max-height: 96px;">
+              <img src="{{ '/assets/images/lorna-logo.png' | relative_url }}" alt="Bohemian Fitness logo" class="img-fluid" style="max-height: 96px;">
             </div>
             <!-- Copy -->
             <div class="flex-grow-1">

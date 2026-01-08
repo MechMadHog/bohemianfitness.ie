@@ -83,7 +83,6 @@ sitemap: false
           <div class="card-body d-flex flex-column">
             <h3 class="h5 fw-bold mb-1">Ger</h3>
             <p class="text-muted mb-3">Coach</p>
-            <a class="btn btn-outline-primary mt-auto" href="{{ '/team/ger/' | relative_url }}">Read more</a>
           </div>
         </article>
       </div>
