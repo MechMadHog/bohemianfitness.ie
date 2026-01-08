@@ -7,7 +7,8 @@ sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
 <!-- HERO -->
-<section class="section section--image" style="--bg:url('/assets/images/hero.jpg')">
+<section class="section section--image page-hero"
+  style="background-image: url('{{ "/assets/images/hero.png" | relative_url }}');">
   <div class="container-80">
         <h1 class="display-4 fw-bold mb-3">Join Our Tribe</h1>
     <p class="lead mb-4">Find your vibe with strength, conditioning, and wellness in Mullingar.</p>
