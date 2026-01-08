@@ -45,7 +45,7 @@ sitemap: false
       <!-- Lorna -->
       <div class="col-12 col-md-6 col-lg-3">
         <article class="card h-100 shadow-sm team-card">
-          <img src="/assets/images/team/lorna.jpg" class="card-img-top" alt="Lorna - Coach">
+          <img src="/assets/images/team/lorna.png" class="card-img-top" alt="Lorna - Coach">
           <div class="card-body d-flex flex-column">
             <h3 class="h5 fw-bold mb-1">Lorna</h3>
             <p class="text-muted mb-3">Owner &amp; Head Coach</p>
@@ -56,7 +56,7 @@ sitemap: false
       <!-- Sarah -->
       <div class="col-12 col-md-6 col-lg-3">
         <article class="card h-100 shadow-sm team-card">
-          <img src="/assets/images/team/sarah.jpg" class="card-img-top" alt="Sarah - Coach">
+          <img src="/assets/images/team/sarah.png" class="card-img-top" alt="Sarah - Coach">
           <div class="card-body d-flex flex-column">
             <h3 class="h5 fw-bold mb-1">Sarah</h3>
             <p class="text-muted mb-3">Coach</p>
@@ -67,7 +67,7 @@ sitemap: false
       <!-- Claudio -->
       <div class="col-12 col-md-6 col-lg-3">
         <article class="card h-100 shadow-sm team-card">
-          <img src="/assets/images/team/claudio.jpg" class="card-img-top" alt="Claudio - Coach">
+          <img src="/assets/images/team/claudio.png" class="card-img-top" alt="Claudio - Coach">
           <div class="card-body d-flex flex-column">
             <h3 class="h5 fw-bold mb-1">Claudio</h3>
             <p class="text-muted mb-3">Coach</p>
@@ -78,7 +78,7 @@ sitemap: false
       <!-- Ger -->
       <div class="col-12 col-md-6 col-lg-3">
         <article class="card h-100 shadow-sm team-card">
-          <img src="/assets/images/team/ger.jpg" class="card-img-top" alt="Ger - Coach">
+          <img src="/assets/images/team/ger.png" class="card-img-top" alt="Ger - Coach">
           <div class="card-body d-flex flex-column">
             <h3 class="h5 fw-bold mb-1">Ger</h3>
             <p class="text-muted mb-3">Coach</p>
