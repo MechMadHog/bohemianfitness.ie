@@ -7,7 +7,7 @@ sitemap: false
 ---
 
 <!-- HERO -->
-<section class="section section--image page-hero" style="--bg:url('/assets/images/about-hero.jpg')">
+<section class="section section--image page-hero" style="--bg:url('/assets/images/about-hero.png')">
   <div class="container text-center">
     <h1 class="display-4 fw-bold mb-3">About Bohemian Fitness</h1>
     <p class="lead mb-0">Strength, community, and a practical path to feeling good.</p>
