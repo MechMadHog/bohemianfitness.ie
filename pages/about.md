@@ -35,6 +35,69 @@ sitemap: false
   </div>
 </section>
 
+<!-- MISSION & CORE BELIEFS -->
+<section class="py-5 section--dark">
+  <div class="container">
+
+    <header class="text-center mb-5">
+      <h2 class="fw-bold mb-2">Our Mission & Core Beliefs</h2>
+      <p class="text-muted mb-0">
+        Health and wellness that supports the whole person… mind, body, and soul.
+      </p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="p-4 p-md-5 rounded-3 bg-light">
+
+          <h3 class="fw-bold mb-3">Our Mission</h3>
+          <p>
+            Bohemian Fitness was founded to provide a progressive and personalised health and wellness
+            service for people at every stage of life. We offer a complete training experience that
+            strengthens the mind, develops the body, and nurtures the soul.
+          </p>
+          <p>
+            We believe in simple but highly effective practices that support our clients on their own
+            unique paths… helping them unlock their true potential and achieve meaningful, lasting goals.
+          </p>
+
+          <h3 class="fw-bold mt-4 mb-3">What We Offer</h3>
+          <p>
+            Our services range from strength and conditioning, cardio, circuits, Boxfit, suspension
+            training, and outdoor park runs, delivered through both small group and individual coaching.
+          </p>
+          <p>
+            For those who wish to lean into their competitive side, we provide high-level programming
+            including Olympic Weightlifting and Strongman, while still supporting general fitness,
+            confidence, and long-term wellbeing.
+          </p>
+
+          <h3 class="fw-bold mt-4 mb-3">Our Core Beliefs</h3>
+          <ul>
+            <li>Every person is different, with their own path and pace of development</li>
+            <li>Positive coaching builds self-confidence, self-appreciation, and self-belief</li>
+            <li>True wellness comes from harmony between mind, body, and soul</li>
+            <li>Growth is ongoing… we are always learning, evolving, and strengthening</li>
+          </ul>
+
+          <p class="mt-4 mb-0">
+            Whether you are returning to movement, supporting your body through pregnancy,
+            rebuilding strength after life changes, or developing athletic performance,
+            Bohemian Fitness offers professional guidance, structure, and community.
+          </p>
+
+          <p class="mt-3 fw-semibold">
+            We welcome you to join our Tribe and find your vibe.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- MEET THE TEAM -->
 <section class="py-5 bg-light">
   <div class="container">
