@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: Bohemian Fitness
+description: Strength, conditioning, and wellness classes in Mullingar. Small group training, mindfulness, and community-focused fitness at Bohemian Fitness.
 ---
 
 <!-- HERO -->
