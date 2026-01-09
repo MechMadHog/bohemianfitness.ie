@@ -30,7 +30,6 @@ sitemap: false               # keeps it out of jekyll-sitemap
             </div>
             <!-- Copy -->
             <div class="flex-grow-1">
-              <p class="text-uppercase small mb-1 text-muted">Site Coming Soon</p>
               <h2 class="h4 mb-2">Join Our Tribe, Find Your Vibe</h2>
               <p class="mb-3">
                 Bohemian Fitness is led by <strong>Lorna</strong>, a health and wellness professional with a
