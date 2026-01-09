@@ -8,7 +8,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
 
 <!-- HERO -->
 <section class="section section--image page-hero"
-  style="--bg:url('{{ "/assets/images/wellness/wellness-room.png" | relative_url }}')">
+  style="--bg:url('{{ "/assets/images/wellness-room.png" | relative_url }}')">
   <div class="container text-center">
     <h1 class="display-4 fw-bold mb-3">Wellness</h1>
     <p class="lead mb-0">
@@ -51,7 +51,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
     <div class="row justify-content-center">
       <div class="col-12 col-md-6 text-center">
         <img
-          src="{{ '/assets/images/wellness/wellness-portrait.png' | relative_url }}"
+          src="{{ '/assets/images/wellness-portrait.png' | relative_url }}"
           alt="Wellness session at Bohemian Fitness"
           class="img-fluid rounded-3 shadow-sm mb-4"
         >
