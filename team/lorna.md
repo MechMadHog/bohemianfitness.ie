@@ -21,6 +21,32 @@ sitemap: false
       <h1 class="mb-2">Lorna</h1>
       <p class="text-muted mb-0">Founder &amp; Head Coach</p>
     </header>
+        <!-- Action images -->
+    <section class="mb-5">
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img
+            src="/assets/images/team/lorna-action-01.png"
+            class="w-100 rounded-3"
+            alt="Lorna coaching strength training"
+          >
+        </div>
+        <div class="col-6 col-md-4">
+          <img
+            src="/assets/images/team/lorna-action-02.png"
+            class="w-100 rounded-3"
+            alt="Lorna demonstrating kettlebell work"
+          >
+        </div>
+        <div class="col-6 col-md-4">
+          <img
+            src="/assets/images/team/lorna-action-03.png"
+            class="w-100 rounded-3"
+            alt="Lorna coaching a group session"
+          >
+        </div>
+      </div>
+    </section>
     <!-- Bio -->
     <div class="mb-4">
       <p class="lead">
@@ -50,32 +76,6 @@ sitemap: false
         consistently, moving well, and building confidence over time, not from chasing extremes.
       </p>
     </section>
-    <!-- Action images -->
-    <section class="mb-5">
-      <div class="row g-3">
-        <div class="col-6 col-md-4">
-          <img
-            src="/assets/images/team/lorna-action-01.png"
-            class="w-100 rounded-3"
-            alt="Lorna coaching strength training"
-          >
-        </div>
-        <div class="col-6 col-md-4">
-          <img
-            src="/assets/images/team/lorna-action-02.png"
-            class="w-100 rounded-3"
-            alt="Lorna demonstrating kettlebell work"
-          >
-        </div>
-        <div class="col-6 col-md-4">
-          <img
-            src="/assets/images/team/lorna-action-03.png"
-            class="w-100 rounded-3"
-            alt="Lorna coaching a group session"
-          >
-        </div>
-      </div>
-    </section>
     <!-- CTA -->
     <div class="d-flex flex-wrap gap-2">
       <a
@@ -93,6 +93,5 @@ sitemap: false
         Get in touch
       </a>
     </div>
-
   </div>
 </section>
