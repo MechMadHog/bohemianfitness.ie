@@ -2,96 +2,92 @@
 layout: default
 title: Sarah
 permalink: /team/sarah/
-noindex: true                # adds the meta robots tag
-sitemap: false               # keeps it out of jekyll-sitemap
-name: Sarah
-role: Coach
-cred:
-  - Training 1
-  - Training 2
-photo_card: /assets/images/team/lorna-card-1200.webp
-photo_portrait: /assets/images/team/lorna-portrait-1200.webp
+noindex: true
+sitemap: false
 ---
 
-<section class="section section--light page-min">
+<section class="section section--light">
   <div class="container">
-    <a class="small text-muted d-inline-block mb-3 text-decoration-none" href="{{ '/about-us/' | relative_url }}">← Back to About</a>
-    <div class="row g-4 align-items-start">
-      <!-- Portrait / quick facts -->
-      <aside class="col-lg-4">
-        <figure class="card border-0 shadow-sm">
-          <img class="w-100 rounded-top object-cover" style="aspect-ratio: 3 / 4;"
-               src="{{ page.photo_portrait | relative_url }}" alt="{{ page.name }}">
-          <figcaption class="card-body">
-            <h1 class="h4 mb-1">{{ page.name }}</h1>
-            <p class="text-muted small mb-3">{{ page.role }}</p>
-            <ul class="list-unstyled small text-muted mb-3">
-              {% for c in page.cred %}<li>{{ c }}</li>{% endfor %}
-            </ul>
-            <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-primary btn-sm"
-                 href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Book a session</a>
-              <a class="btn btn-outline-secondary btn-sm" href="{{ '/timetables/' | relative_url }}">See timetable</a>
-            </div>
-          </figcaption>
-        </figure>
-        <!-- Specialities -->
-        <div class="p-3 bg-light rounded-3 mt-3">
-          <h2 class="h6 mb-2">Specialities</h2>
-          <ul class="mb-0 small">
-            <li>Strength technique & progressions</li>
-            <li>Mobility & core</li>
-            <li>Pre/post-natal programming</li>
-          </ul>
+    <!-- Back link -->
+    <a
+      href="{{ '/about-us/' | relative_url }}"
+      class="d-inline-flex align-items-center gap-2 text-decoration-none small mb-4"
+    >
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Back to About</span>
+    </a>
+    <!-- Page heading -->
+    <header class="mb-4">
+      <h1 class="mb-2">Sarah</h1>
+      <p class="text-muted mb-0">Coach</p>
+    </header>
+    <!-- Action images -->
+    <section class="mb-5">
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img
+            src="/assets/images/team/sarah-action-01.png"
+            class="w-100 rounded-3"
+            alt="Sarah coaching strength training"
+          >
         </div>
-      </aside>
-      <!-- Bio / long form -->
-      <div class="col-lg-8">
-        <article class="prose">
-          <h2 class="h3 mb-2 visually-hidden">{{ page.name }}</h2>
-          <p class="lead mb-3">
-            <!-- 1–2 line summary in their own words -->
-          </p>
-          <!-- Paste their full bio here (multiple paragraphs ok) -->
-          <p>...</p>
-          <p>...</p>
-          <!-- Optional pull-quote -->
-          <blockquote class="border-start ps-3 my-4">
-            <p class="mb-1">“Training should be simple, repeatable, and built around your life.”</p>
-            <footer class="small text-muted">— {{ page.name }}</footer>
-          </blockquote>
-          <!-- Mini FAQ (accordion) -->
-          <div class="accordion" id="coach-faq">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="q1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Who is this class ideal for?</button>
-              </h2>
-              <div id="a1" class="accordion-collapse collapse" data-bs-parent="#coach-faq">
-                <div class="accordion-body small">
-                  Beginners to intermediate lifters who want steady strength gains and better movement quality.
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CTAs -->
-          <div class="d-flex flex-wrap gap-2 mt-4">
-            <a class="btn btn-primary" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Train with {{ page.name }}</a>
-            <a class="btn btn-outline-secondary" href="{{ '/contact/' | relative_url }}">Message {{ page.name }}</a>
-          </div>
-        </article>
+        <div class="col-6 col-md-4">
+          <img
+            src="/assets/images/team/sarah-action-02.png"
+            class="w-100 rounded-3"
+            alt="Sarah demonstrating exercise technique"
+          >
+        </div>
+        <div class="col-6 col-md-4">
+          <img
+            src="/assets/images/team/sarah-action-03.png"
+            class="w-100 rounded-3"
+            alt="Sarah coaching a group class"
+          >
+        </div>
       </div>
+    </section>
+    <!-- Bio -->
+    <div class="mb-4">
+      <p class="lead">
+        Sarah is a coach at Bohemian Fitness who focuses on helping people build strength, confidence, and
+        consistency through supportive, well coached training.
+      </p>
+      <p>
+        She works with members of all abilities, taking a calm and practical approach to movement. Sessions
+        are structured to be approachable while still offering progression, with an emphasis on good
+        technique and sustainable training habits.
+      </p>
+      <p>
+        Sarah is particularly attentive to creating a welcoming environment for those who may feel nervous
+        returning to training or starting for the first time. Her coaching style is clear, encouraging, and
+        adaptable to each individual.
+      </p>
+    </div>
+    <!-- Coaching approach -->
+    <section class="mb-4">
+      <h2 class="h5 mb-2">Coaching approach</h2>
+      <p>
+        Training should feel supportive and achievable. Progress comes from building confidence in movement,
+        learning good habits, and showing up consistently rather than pushing extremes.
+      </p>
+    </section>
+    <!-- CTA -->
+    <div class="d-flex flex-wrap gap-2">
+      <a
+        class="btn btn-primary"
+        href="https://legitfit.com/authenticate/signup/lornabbohemianfitness"
+        target="_blank"
+        rel="noopener"
+      >
+        Train with Sarah
+      </a>
+      <a
+        class="btn btn-outline-primary"
+        href="{{ '/contact/' | relative_url }}"
+      >
+        Get in touch
+      </a>
     </div>
   </div>
 </section>
-<!-- JSON-LD (helps SEO, optional) -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"{{ page.name }}",
-  "jobTitle":"{{ page.role }}",
-  "affiliation":{"@type":"SportsActivityLocation","name":"Bohemian Fitness"},
-  "image":"{{ page.photo_portrait | relative_url }}",
-  "url":"{{ page.url | absolute_url }}"
-}
-</script>
