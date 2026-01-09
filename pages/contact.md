@@ -87,7 +87,6 @@ sitemap: false               # keeps it out of jekyll-sitemap
                   allowfullscreen
                   title="Bohemian Fitness location map"
                 ></iframe>
-
               </div>
             </div>
           </div>
@@ -102,7 +101,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
           <h2 class="fw-bold mb-2">Send an enquiry</h2>
           <p class="text-muted mb-0">Tell us a bit about your goals and we’ll point you in the right direction.</p>
         </header>
-        <form action="https://formspree.io/f/xblzyjdn" method="POST" class="needs-validation" novalidate>
+        <form action="https://formspree.io/f/meeejoyd" method="POST" class="needs-validation" novalidate>
           <!-- name -->
           <div class="mb-3">
             <label for="name" class="form-label">Your name</label>
@@ -135,7 +134,6 @@ sitemap: false               # keeps it out of jekyll-sitemap
             If you do not join, your details are not kept.
           </p>
         </div>
-
       </div>
     </div>
   </div>
