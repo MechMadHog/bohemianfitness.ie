@@ -7,24 +7,18 @@ sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
 <!-- HERO -->
-<section class="section section--image page-hero hero-carousel">
+<section
+  id="heroSection"
+  class="section section--image page-hero hero-carousel">
   <div id="heroCarousel"
        class="carousel slide carousel-fade w-100"
        data-bs-ride="carousel"
        data-bs-interval="5000">
     <div class="carousel-inner h-100">
-      <div class="carousel-item active h-100"
-           style="--bg: url('{{ "/assets/images/hero.png" | relative_url }}');">
-      </div>
-      <div class="carousel-item h-100"
-           style="--bg: url('{{ "/assets/images/hero-2.png" | relative_url }}');">
-      </div>
-      <div class="carousel-item h-100"
-           style="--bg: url('{{ "/assets/images/hero-3.png" | relative_url }}');">
-      </div>
-      <div class="carousel-item h-100"
-           style="--bg: url('{{ "/assets/images/hero-4.png" | relative_url }}');">
-      </div>
+    <div class="carousel-item active" data-bg="{{ '/assets/images/hero.png' | relative_url }}"></div>
+    <div class="carousel-item" data-bg="{{ '/assets/images/hero-2.png' | relative_url }}"></div>
+    <div class="carousel-item" data-bg="{{ '/assets/images/hero-3.png' | relative_url }}"></div>
+    <div class="carousel-item" data-bg="{{ '/assets/images/hero-4.png' | relative_url }}"></div>
     </div>
     <!-- overlayed content -->
     <div class="hero-overlay">

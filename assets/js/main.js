@@ -246,3 +246,28 @@ function initialTagFromURL() {
   homeGrid.innerHTML = "";
   homeGrid.appendChild(frag);
 })();
+
+
+/* Hero Carousel */
+(function () {
+    const hero = document.getElementById('heroSection');
+    const carousel = document.getElementById('heroCarousel');
+
+    if (!hero || !carousel) return;
+
+    function setHeroBg(slide) {
+      const bg = slide.getAttribute('data-bg');
+      if (bg) {
+        hero.style.setProperty('--bg', `url('${bg}')`);
+      }
+    }
+
+    // Set initial image
+    const active = carousel.querySelector('.carousel-item.active');
+    if (active) setHeroBg(active);
+
+    // Update on slide change
+    carousel.addEventListener('slid.bs.carousel', function (e) {
+      setHeroBg(e.relatedTarget);
+    });
+  })();
