@@ -9,14 +9,10 @@ sitemap: false               # keeps it out of jekyll-sitemap
   <div class="container">
     <header class="mb-4 text-center">
       <h1 class="mb-2">Classes</h1>
-      <p class="text-muted mb-0">Clear descriptions so you can pick the right starting point.</p>
+      <p class="text-muted mb-0">Cardio &amp; Conditioning</p>
     </header>
     <!-- CARDIO IMAGES (PORTRAIT x3) -->
     <section class="py-4">
-      <header class="text-center mb-4">
-        <h2 class="fw-bold mb-2">Cardio &amp; Conditioning</h2>
-        <p class="text-muted mb-0">Build fitness, confidence, and momentum… all levels welcome.</p>
-      </header>
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-md-4 text-center">
           <img
