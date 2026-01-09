@@ -55,21 +55,21 @@ sitemap: false
       <div class="row g-3">
         <div class="col-6 col-md-4">
           <img
-            src="/assets/images/team/lorna-action-01.webp"
+            src="/assets/images/team/lorna-action-01.png"
             class="w-100 rounded-3"
             alt="Lorna coaching strength training"
           >
         </div>
         <div class="col-6 col-md-4">
           <img
-            src="/assets/images/team/lorna-action-02.webp"
+            src="/assets/images/team/lorna-action-02.png"
             class="w-100 rounded-3"
             alt="Lorna demonstrating kettlebell work"
           >
         </div>
         <div class="col-6 col-md-4">
           <img
-            src="/assets/images/team/lorna-action-03.webp"
+            src="/assets/images/team/lorna-action-03.png"
             class="w-100 rounded-3"
             alt="Lorna coaching a group session"
           >
