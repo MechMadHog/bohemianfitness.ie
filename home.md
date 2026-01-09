@@ -6,18 +6,82 @@ noindex: true                # adds the meta robots tag
 sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
-<!-- HERO -->
-<section class="section section--image page-hero"
-  style="background-image: url('{{ "/assets/images/hero.png" | relative_url }}');">
-  <div class="container-80">
+<!-- HERO (Carousel) -->
+<section class="page-hero hero-carousel">
+  <div
+    id="heroCarousel"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel"
+    data-bs-interval="5000"
+    data-bs-pause="false"
+  >
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div
+          class="hero-slide"
+          style="--hero-bg: url('{{ "/assets/images/hero.png" | relative_url }}');"
+          role="img"
+          aria-label="Bohemian Fitness hero image 1"
+        ></div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div
+          class="hero-slide"
+          style="--hero-bg: url('{{ "/assets/images/hero-2.png" | relative_url }}');"
+          role="img"
+          aria-label="Bohemian Fitness hero image 2"
+        ></div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div
+          class="hero-slide"
+          style="--hero-bg: url('{{ "/assets/images/hero-3.png" | relative_url }}');"
+          role="img"
+          aria-label="Bohemian Fitness hero image 3"
+        ></div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div
+          class="hero-slide"
+          style="--hero-bg: url('{{ "/assets/images/hero-4.png" | relative_url }}');"
+          role="img"
+          aria-label="Bohemian Fitness hero image 3"
+        ></div>
+      </div>
+    </div>
+    <!-- Optional controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <!-- Optional indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Overlayed hero content (stays consistent across slides) -->
+    <div class="hero-overlay">
+      <div class="container-80 text-center">
         <h1 class="display-4 fw-bold mb-3">Join Our Tribe</h1>
-    <p class="lead mb-4">Find your vibe with strength, conditioning, and wellness in Mullingar.</p>
-    <div class="d-flex gap-3 justify-content-center">
-      <a href="{{ '/programs/' | relative_url }}" class="btn btn-primary btn-lg">View Programs</a>
-      <a href="{{ '/contact/'  | relative_url }}" class="btn btn-outline-light btn-lg">Get in Touch</a>
+        <p class="lead mb-4">Find your vibe with strength, conditioning, and wellness in Mullingar.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="{{ '/programs/' | relative_url }}" class="btn btn-primary btn-lg">View Programs</a>
+          <a href="{{ '/contact/'  | relative_url }}" class="btn btn-outline-light btn-lg">Get in Touch</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- PROGRAMS SUMMARY -->
 <section class="py-5">
