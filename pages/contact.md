@@ -56,23 +56,57 @@ permalink: /contact/
           <div class="row g-3 align-items-start">
             <div class="col-12 col-lg-5">
               <h3 class="h6 mb-2">Studio</h3>
-              <address class="mb-2">
+              <address class="mb-3">
                 Austin Friars St,<br>
                 Mullingar, Co. Westmeath,<br>
                 N91 X221
               </address>
-              <!-- Optional direct links -->
-              <div class="d-flex gap-2 flex-wrap">
-                <a
-                  class="btn btn-sm btn-outline-primary"
-                  target="_blank"
-                  rel="noopener"
-                  href="https://www.google.com/maps?q=Bohemian+Fitness,+Austin+Friars+St,+Mullingar,+N91+X221"
-                >
-                  Open in Google Maps
-                </a>
-                <!-- If you have a reviews link, add it here -->
-                <!-- <a class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener" href="YOUR_GOOGLE_REVIEWS_URL">Read Reviews</a> -->
+              <div class="d-flex flex-column gap-3">
+                <!-- Google Maps -->
+                <div>
+                  <a
+                      class="btn btn-sm btn-outline-primary"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://www.google.com/maps?q=Bohemian+Fitness,+Austin+Friars+St,+Mullingar,+N91+X221"
+                    >
+                      Open in Google Maps
+                  </a>
+                </div>
+                  <!-- Contact / social icons -->
+                  <nav
+                    class="d-flex gap-4 align-items-center"
+                    aria-label="Contact links"
+                  >
+                    <a
+                      href="mailto:lbdfitness20@gmail.com"
+                      class="text-decoration-none"
+                      aria-label="Email Bohemian Fitness"
+                      target="_blank"
+                      rel="me noopener"
+                    >
+                      <i class="fa fa-envelope fa-2x"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/lornab_fitness/"
+                      class="text-decoration-none"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="me noopener"
+                    >
+                      <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/p/LorNa-B-Bohemian-Fitness-100027198982525/"
+                      class="text-decoration-none"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="me noopener"
+                    >
+                      <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                  </nav>
+                </div>
               </div>
             </div>
             <div class="col-12 col-lg-7">
