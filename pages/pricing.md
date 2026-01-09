@@ -34,7 +34,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
           <div class="card-body d-flex flex-column">
             <h2 class="h5 mb-1">Monthly Membership</h2>
             <p class="text-muted small mb-3">Best for steady progress.</p>
-            <div class="display-6 fw-bold mb-3">€100 / month</div>
+            <div class="display-6 fw-bold mb-3">€100</div>
             <ul class="mb-4">
               <li>2–3 sessions per week</li>
               <li>Progress tracking</li>
