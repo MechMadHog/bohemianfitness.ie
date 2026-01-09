@@ -46,19 +46,20 @@ sitemap: false               # keeps it out of jekyll-sitemap
 </section>
 
 <!-- IMAGE BREAK -->
-<section class="py-5 section--light">
+<section class="py-5 section--dark">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-6 text-center">
+      <div class="col-12 col-md-5 text-center">
         <img
           src="{{ '/assets/images/wellness-portrait.png' | relative_url }}"
           alt="Wellness session at Bohemian Fitness"
-          class="img-fluid rounded-3 shadow-sm mb-4"
+          class="img-fluid rounded-3 shadow-sm"
         >
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- SERVICES -->
 <section class="py-5 section--dark">
