@@ -19,7 +19,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
           <div class="card-body d-flex flex-column">
             <h2 class="h5 mb-1">Trial Session</h2>
             <p class="text-muted small mb-3">Try a class before you commit.</p>
-            <div class="display-6 fw-bold mb-3">€—</div>
+            <div class="display-6 fw-bold mb-3">FREE</div>
             <ul class="mb-4">
               <li>Join any suitable class</li>
               <li>Coach feedback after</li>
@@ -34,7 +34,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
           <div class="card-body d-flex flex-column">
             <h2 class="h5 mb-1">Monthly Membership</h2>
             <p class="text-muted small mb-3">Best for steady progress.</p>
-            <div class="display-6 fw-bold mb-3">€— / mo</div>
+            <div class="display-6 fw-bold mb-3">€100 / month</div>
             <ul class="mb-4">
               <li>2–3 sessions per week</li>
               <li>Progress tracking</li>
@@ -48,9 +48,9 @@ sitemap: false               # keeps it out of jekyll-sitemap
       <div class="col-md-6 col-lg-4">
         <article class="card h-100 shadow-sm">
           <div class="card-body d-flex flex-column">
-            <h2 class="h5 mb-1">12-Week Block</h2>
+            <h2 class="h5 mb-1">10-Week Block</h2>
             <p class="text-muted small mb-3">Commit and build momentum.</p>
-            <div class="display-6 fw-bold mb-3">€—</div>
+            <div class="display-6 fw-bold mb-3">€200</div>
             <ul class="mb-4">
               <li>Structured phases</li>
               <li>Coach check-ins</li>
