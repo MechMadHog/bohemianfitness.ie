@@ -2,8 +2,6 @@
 layout: default
 title: Claudio
 permalink: /team/claudio/
-noindex: true
-sitemap: false
 ---
 
 <section class="section section--light">

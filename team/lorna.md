@@ -2,8 +2,6 @@
 layout: default
 title: Lorna
 permalink: /team/lorna/
-noindex: true
-sitemap: false
 ---
 
 <section class="section section--light">

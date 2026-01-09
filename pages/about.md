@@ -2,8 +2,6 @@
 layout: default
 title: About Bohemian Fitness
 permalink: /about-us/
-noindex: true
-sitemap: false
 ---
 
 <!-- HERO -->

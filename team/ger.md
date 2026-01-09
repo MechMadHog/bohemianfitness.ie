@@ -2,8 +2,6 @@
 layout: default
 title: Ger
 permalink: /team/ger/
-noindex: true
-sitemap: false
 ---
 
 <section class="section section--light">

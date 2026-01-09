@@ -2,8 +2,6 @@
 layout: default
 title: Sarah
 permalink: /team/sarah/
-noindex: true
-sitemap: false
 ---
 
 <section class="section section--light">

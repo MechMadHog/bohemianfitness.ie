@@ -2,8 +2,6 @@
 layout: default
 title: Wellness
 permalink: /wellness/
-noindex: true                # adds the meta robots tag
-sitemap: false               # keeps it out of jekyll-sitemap
 ---
 
 <!-- HERO -->
