@@ -81,12 +81,13 @@ sitemap: false               # keeps it out of jekyll-sitemap
               <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <!-- Google Maps Embed for the address above -->
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.101777465622!2d-7.34176852330964!3d53.525078972339866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485daf3a9b37fef1%3A0x2f5a3ad91c9d0844!2sBohemian%20Fitness!5e0!3m2!1sen!2sie!4v1761259391937!5m2!1sen!2sie"
+                  src="https://www.google.com/maps?q=Austin+Friars+St,+Mullingar,+Co.+Westmeath,+N91+X221&output=embed"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                   allowfullscreen
                   title="Bohemian Fitness location map"
                 ></iframe>
+
               </div>
             </div>
           </div>
