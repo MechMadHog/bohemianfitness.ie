@@ -20,21 +20,21 @@ sitemap: false               # keeps it out of jekyll-sitemap
       <div class="row g-4 justify-content-center">
         <div class="col-12 col-md-4 text-center">
           <img
-            src="{{ '/assets/images/cardio-1.jpg' | relative_url }}"
+            src="{{ '/assets/images/cardio-1.png' | relative_url }}"
             alt="Cardio training at Bohemian Fitness"
             class="img-fluid rounded-3 shadow-sm"
           >
         </div>
         <div class="col-12 col-md-4 text-center">
           <img
-            src="{{ '/assets/images/cardio-2.jpg' | relative_url }}"
+            src="{{ '/assets/images/cardio-2.png' | relative_url }}"
             alt="Conditioning session at Bohemian Fitness"
             class="img-fluid rounded-3 shadow-sm"
           >
         </div>
         <div class="col-12 col-md-4 text-center">
           <img
-            src="{{ '/assets/images/cardio-3.jpg' | relative_url }}"
+            src="{{ '/assets/images/cardio-3.png' | relative_url }}"
             alt="Group cardio class at Bohemian Fitness"
             class="img-fluid rounded-3 shadow-sm"
           >
