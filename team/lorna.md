@@ -2,10 +2,10 @@
 layout: default
 title: Lorna
 permalink: /team/lorna/
-noindex: true                # adds the meta robots tag
-sitemap: false               # keeps it out of jekyll-sitemap
+noindex: true
+sitemap: false
 name: Lorna
-role: Coach
+role: Founder & Head Coach
 cred:
   - BSc (Hons) Strength & Conditioning
   - Pre & Post-Natal Training
@@ -15,23 +15,41 @@ photo_portrait: /assets/images/team/lorna-portrait-1200.webp
 
 <section class="section section--light page-min">
   <div class="container">
-    <a class="small text-muted d-inline-block mb-3 text-decoration-none" href="{{ '/about-us/' | relative_url }}">← Back to About</a>
+    <a class="small text-muted d-inline-block mb-3 text-decoration-none"
+       href="{{ '/about-us/' | relative_url }}">← Back to About</a>
     <div class="row g-4 align-items-start">
       <!-- Portrait / quick facts -->
       <aside class="col-lg-4">
         <figure class="card border-0 shadow-sm">
-          <img class="w-100 rounded-top object-cover" style="aspect-ratio: 3 / 4;"
-               src="{{ page.photo_portrait | relative_url }}" alt="{{ page.name }}">
+          <img
+            class="w-100 rounded-top object-cover"
+            style="aspect-ratio: 3 / 4;"
+            src="{{ page.photo_portrait | relative_url }}"
+            alt="{{ page.name }}"
+          >
           <figcaption class="card-body">
             <h1 class="h4 mb-1">{{ page.name }}</h1>
             <p class="text-muted small mb-3">{{ page.role }}</p>
             <ul class="list-unstyled small text-muted mb-3">
-              {% for c in page.cred %}<li>{{ c }}</li>{% endfor %}
+              {% for c in page.cred %}
+                <li>{{ c }}</li>
+              {% endfor %}
             </ul>
             <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-primary btn-sm"
-                 href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Book a session</a>
-              <a class="btn btn-outline-secondary btn-sm" href="{{ '/timetables/' | relative_url }}">See timetable</a>
+              <a
+                class="btn btn-primary btn-sm"
+                href="https://legitfit.com/authenticate/signup/lornabbohemianfitness"
+                target="_blank"
+                rel="noopener"
+              >
+                Book a session
+              </a>
+              <a
+                class="btn btn-outline-secondary btn-sm"
+                href="{{ '/timetables/' | relative_url }}"
+              >
+                See timetable
+              </a>
             </div>
           </figcaption>
         </figure>
@@ -41,57 +59,104 @@ photo_portrait: /assets/images/team/lorna-portrait-1200.webp
           <ul class="mb-0 small">
             <li>Strength technique & progressions</li>
             <li>Mobility & core</li>
-            <li>Pre/post-natal programming</li>
+            <li>Pre- & post-natal training</li>
           </ul>
         </div>
       </aside>
-      <!-- Bio / long form -->
+      <!-- Main content -->
       <div class="col-lg-8">
-        <article class="prose">
-          <h2 class="h3 mb-2 visually-hidden">{{ page.name }}</h2>
+        <!-- Intro -->
+        <section class="mb-4">
           <p class="lead mb-3">
-            <!-- 1–2 line summary in their own words -->
+            Lorna is the founder and head coach of Bohemian Fitness, with a focus on building real-world strength,
+            confidence, and long-term consistency.
           </p>
-          <!-- Paste their full bio here (multiple paragraphs ok) -->
-          <p>...</p>
-          <p>...</p>
-          <!-- Optional pull-quote -->
-          <blockquote class="border-start ps-3 my-4">
-            <p class="mb-1">“Training should be simple, repeatable, and built around your life.”</p>
-            <footer class="small text-muted">— {{ page.name }}</footer>
-          </blockquote>
-          <!-- Mini FAQ (accordion) -->
-          <div class="accordion" id="coach-faq">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="q1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1">Who is this class ideal for?</button>
-              </h2>
-              <div id="a1" class="accordion-collapse collapse" data-bs-parent="#coach-faq">
-                <div class="accordion-body small">
-                  Beginners to intermediate lifters who want steady strength gains and better movement quality.
-                </div>
-              </div>
+        </section>
+        <!-- Bio -->
+        <section class="mb-4">
+          <p>
+            With over a decade of experience in the fitness industry, Lorna has worked with people from all walks
+            of life — from complete beginners to seasoned athletes. Her approach is grounded in education,
+            movement quality, and helping people feel capable in their own bodies.
+          </p>
+          <p>
+            Bohemian Fitness was created as a response to traditional gym culture. Instead of mirrors, pressure,
+            and intimidation, the space prioritises support, adaptability, and community. Sessions are coached,
+            scalable, and designed to meet people where they are.
+          </p>
+          <p>
+            Lorna holds a BSc (Hons) in Strength & Conditioning and specialises in pre- and post-natal training,
+            supporting clients to build strength safely through different stages of life.
+          </p>
+        </section>
+        <!-- Philosophy -->
+        <section class="mb-4">
+          <h2 class="h5 mb-2">Training philosophy</h2>
+          <p>
+            Training should be simple, repeatable, and fit into real life. Progress comes from showing up
+            consistently, moving well, and building confidence over time — not from chasing extremes.
+          </p>
+        </section>
+        <!-- Action images -->
+        <section class="mb-4">
+          <h2 class="h5 mb-3">In action</h2>
+          <div class="row g-3">
+            <div class="col-6 col-md-4">
+              <img
+                src="/assets/images/team/lorna-action-01.webp"
+                class="w-100 rounded-3"
+                alt="Lorna coaching strength training"
+              >
+            </div>
+            <div class="col-6 col-md-4">
+              <img
+                src="/assets/images/team/lorna-action-02.webp"
+                class="w-100 rounded-3"
+                alt="Lorna demonstrating kettlebell work"
+              >
+            </div>
+            <div class="col-6 col-md-4">
+              <img
+                src="/assets/images/team/lorna-action-03.webp"
+                class="w-100 rounded-3"
+                alt="Lorna coaching group training session"
+              >
             </div>
           </div>
-          <!-- CTAs -->
-          <div class="d-flex flex-wrap gap-2 mt-4">
-            <a class="btn btn-primary" href="https://legitfit.com/authenticate/signup/lornabbohemianfitness" target="_blank" rel="noopener">Train with {{ page.name }}</a>
-            <a class="btn btn-outline-secondary" href="{{ '/contact/' | relative_url }}">Message {{ page.name }}</a>
-          </div>
-        </article>
+        </section>
+        <!-- CTAs -->
+        <section class="d-flex flex-wrap gap-2 mt-4">
+          <a
+            class="btn btn-primary"
+            href="https://legitfit.com/authenticate/signup/lornabbohemianfitness"
+            target="_blank"
+            rel="noopener"
+          >
+            Train with Lorna
+          </a>
+          <a
+            class="btn btn-outline-secondary"
+            href="{{ '/contact/' | relative_url }}"
+          >
+            Get in touch
+          </a>
+        </section>
       </div>
     </div>
   </div>
 </section>
-<!-- JSON-LD (helps SEO, optional) -->
+
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"{{ page.name }}",
-  "jobTitle":"{{ page.role }}",
-  "affiliation":{"@type":"SportsActivityLocation","name":"Bohemian Fitness"},
-  "image":"{{ page.photo_portrait | relative_url }}",
-  "url":"{{ page.url | absolute_url }}"
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ page.name }}",
+  "jobTitle": "{{ page.role }}",
+  "affiliation": {
+    "@type": "SportsActivityLocation",
+    "name": "Bohemian Fitness"
+  },
+  "image": "{{ page.photo_portrait | relative_url }}",
+  "url": "{{ page.url | absolute_url }}"
 }
 </script>
