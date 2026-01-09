@@ -9,7 +9,7 @@ sitemap: false               # keeps it out of jekyll-sitemap
   <div class="container">
     <header class="mb-4 text-center">
       <h1 class="mb-2">Classes</h1>
-      <p class="text-muted mb-0">Cardio &amp; Conditioning</p>
+      <h4 class="text-muted mb-0">Cardio &amp; Conditioning</h4>
     </header>
     <!-- CARDIO IMAGES (PORTRAIT x3) -->
     <section class="py-4">
