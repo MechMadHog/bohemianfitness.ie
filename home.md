@@ -28,15 +28,13 @@ sitemap: false               # keeps it out of jekyll-sitemap
           Find your vibe with strength, conditioning, and wellness in Mullingar.
         </p>
         <div class="d-flex gap-3 justify-content-center flex-wrap">
-          <a href="{{ '/programs/' | relative_url }}" class="btn btn-primary btn-lg">View Programs</a>
+          <a href="{{ '/classes/' | relative_url }}" class="btn btn-primary btn-lg">View Programs</a>
           <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline-light btn-lg">Get in Touch</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
 
 <!-- PROGRAMS SUMMARY -->
 <section class="py-5">
@@ -46,21 +44,21 @@ sitemap: false               # keeps it out of jekyll-sitemap
         <div class="p-4 bg-light rounded-3 h-100">
           <h3 class="fw-bold mb-2">Strength &amp; Conditioning</h3>
           <p class="mb-3">Build real strength with small-group coaching and progressive programming.</p>
-          <a class="text-decoration-none fw-semibold" href="{{ '/programs/#strength' | relative_url }}">Learn more →</a>
+          <a class="text-decoration-none fw-semibold" href="{{ '/classes/#strength' | relative_url }}">Learn more →</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="p-4 bg-light rounded-3 h-100">
           <h3 class="fw-bold mb-2">Sweatcon</h3>
           <p class="mb-3">Higher-intensity conditioning inspired by Hyrox. Scalable for all levels.</p>
-          <a class="text-decoration-none fw-semibold" href="{{ '/programs/#sweatcon' | relative_url }}">Learn more →</a>
+          <a class="text-decoration-none fw-semibold" href="{{ '/classes/#sweatcon' | relative_url }}">Learn more →</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="p-4 bg-light rounded-3 h-100">
           <h3 class="fw-bold mb-2">Mindfulness &amp; Massage</h3>
           <p class="mb-3">Energy healing and restorative sessions to reset body and mind.</p>
-          <a class="text-decoration-none fw-semibold" href="{{ '/programs/#mindfulness' | relative_url }}">Learn more →</a>
+          <a class="text-decoration-none fw-semibold" href="{{ '/classes/#mindfulness' | relative_url }}">Learn more →</a>
         </div>
       </div>
     </div>
@@ -70,21 +68,21 @@ sitemap: false               # keeps it out of jekyll-sitemap
         <div class="p-4 bg-light rounded-3 h-100">
           <h3 class="fw-bold mb-2">Postpartum Pump (BYOB)</h3>
           <p class="mb-3">Bring your baby. Safe strength training focused on recovery and confidence.</p>
-          <a class="text-decoration-none fw-semibold" href="{{ '/programs/#postpartum' | relative_url }}">Learn more →</a>
+          <a class="text-decoration-none fw-semibold" href="{{ '/classes/#postpartum' | relative_url }}">Learn more →</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="p-4 bg-light rounded-3 h-100">
           <h3 class="fw-bold mb-2">T-Rex &amp; Kettlebells</h3>
           <p class="mb-3">Fun, full-body strength and core with kettlebells and suspension.</p>
-          <a class="text-decoration-none fw-semibold" href="{{ '/programs/#trex' | relative_url }}">Learn more →</a>
+          <a class="text-decoration-none fw-semibold" href="{{ '/classes/#trex' | relative_url }}">Learn more →</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="p-4 bg-light rounded-3 h-100">
           <h3 class="fw-bold mb-2">Fit for Life</h3>
           <p class="mb-3">Low-impact movement for every age and stage. Community-driven.</p>
-          <a class="text-decoration-none fw-semibold" href="{{ '/programs/#fitforlife' | relative_url }}">Learn more →</a>
+          <a class="text-decoration-none fw-semibold" href="{{ '/classes/#fitforlife' | relative_url }}">Learn more →</a>
         </div>
       </div>
     </div>
