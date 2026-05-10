@@ -15,17 +15,15 @@ permalink: /timetables/
     <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
       <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span>
       <span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span>
-      <span class="badge bg-dark-subtle text-dark border border-dark-subtle">Sweatcon &amp; Barbell</span>
-      <span class="badge bg-dark text-white">Barbell</span>
+      <span class="badge bg-dark text-white">Barbells</span>
       <span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp</span>
-      <span class="badge bg-warning text-dark">Beginners Bootcamp</span>
-      <span class="badge bg-info text-white">TRX</span>
-      <span class="badge bg-info-subtle text-info border border-info-subtle">Pre &amp; Post Natal</span>
+      <span class="badge bg-info text-white">Bootcamp Circuits</span>
+      <span class="badge bg-warning text-dark">Bohemian Bootcamp Beginners</span>
+      <span class="badge bg-info-subtle text-info border border-info-subtle">Postpartum Pump BYOB</span>
       <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">Fit for Life</span>
-      <span class="badge bg-primary text-white">Teens S&amp;C</span>
-      <span class="badge bg-success text-white">Beginners Sweatcon</span>
+      <span class="badge bg-primary text-white">Kids S&amp;C</span>
+      <span class="badge bg-success text-white">Teens S&amp;C</span>
       <span class="badge bg-secondary text-white">Beginners S&amp;C</span>
-      <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">Mindfulness &amp; Mobility</span>
     </div>
     <!-- MORNING -->
     <h2 class="h4 mt-4">Morning Timetable</h2>
@@ -44,52 +42,79 @@ permalink: /timetables/
         </thead>
         <tbody>
           <tr>
-            <th scope="row">06:00</th>
+            <th scope="row">06:00–06:30</th>
             <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
-            <td><span class="badge bg-dark text-white">Barbell</span></td>
+            <td><span class="badge bg-dark text-white">Barbells</span></td>
             <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">07:00</th>
-            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
-            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp</span></td>
+            <th scope="row">06:30–07:00</th>
+            <td>—</td>
+            <td>—</td>
             <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
-            <td><span class="badge bg-info text-white">TRX</span></td>
+            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp<br><small>07:00–07:45</small></span></td>
             <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">08:00</th>
-            <td>—</td>
-            <td>—</td>
-            <td>—</td>
-            <td>—</td>
-            <td>—</td>
-            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
-          </tr>
-          <tr>
-            <th scope="row">09:15</th>
-            <td>—</td>
-            <td>—</td>
-            <td>—</td>
-            <td>—</td>
-            <td>—</td>
-            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
-          </tr>
-          <tr>
-            <th scope="row">09:30</th>
+            <th scope="row">07:00–07:30</th>
             <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
-            <td><span class="badge bg-info-subtle text-info border border-info-subtle">Pre &amp; Post Natal</span></td>
+            <td><span class="badge bg-info text-white">Bootcamp Circuits<br><small>07:00–07:45</small></span></td>
             <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
             <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp</span></td>
-            <td><span class="badge bg-info-subtle text-info border border-info-subtle">Pre &amp; Post Natal</span></td>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">10:30</th>
+            <th scope="row">07:30–08:00</th>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
+            <td><span class="badge bg-info text-white">Bootcamp Circuits</span></td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+            <td>—</td>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">08:00–08:30</th>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+          </tr>
+          <tr>
+            <th scope="row">08:30–09:00</th>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+          </tr>
+          <tr>
+            <th scope="row">09:15–09:30</th>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+          </tr>
+          <tr>
+            <th scope="row">09:30–10:30</th>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
+            <td><span class="badge bg-info-subtle text-info border border-info-subtle">Postpartum Pump BYOB<br><small>Bring Your Own Baby</small></span></td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp</span></td>
+            <td><span class="badge bg-info-subtle text-info border border-info-subtle">Postpartum Pump BYOB<br><small>Bring Your Own Baby</small></span></td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+          </tr>
+          <tr>
+            <th scope="row">10:30–11:30</th>
             <td><span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">Fit for Life</span></td>
             <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td><span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">Fit for Life</span></td>
@@ -117,38 +142,56 @@ permalink: /timetables/
         </thead>
         <tbody>
           <tr>
+            <th scope="row">15:15–16:05</th>
+            <td>—</td>
+            <td>—</td>
+            <td><span class="badge bg-primary text-white">Kids S&amp;C</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
             <th scope="row">16:10–17:10</th>
-            <td><span class="badge bg-primary text-white">Teens S&amp;C</span></td>
             <td>—</td>
-            <td><span class="badge bg-primary text-white">Teens S&amp;C</span></td>
+            <td>—</td>
+            <td><span class="badge bg-success text-white">Teens S&amp;C</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">17:10–18:00</th>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp<br><small>17:10–18:30</small></span></td>
+            <td><span class="badge bg-info text-white">Bootcamp Circuits</span></td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon<br><small>17:10–18:30</small></span></td>
+            <td><span class="badge bg-info text-white">Bootcamp Circuits<br><small>17:10–18:30</small></span></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">18:00–19:00</th>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
+            <td>—</td>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td>—</td>
             <td>—</td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">17:10</th>
-            <td><span class="badge bg-success text-white">Beginners Sweatcon</span></td>
-            <td><span class="badge bg-info text-white">TRX</span></td>
-            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp</span></td>
-            <td><span class="badge bg-info text-white">TRX</span></td>
-            <td><span class="badge bg-warning-subtle text-warning border border-warning-subtle">Bohemian Bootcamp</span></td>
+            <th scope="row">18:30–19:30</th>
+            <td>—</td>
+            <td><span class="badge bg-success-subtle text-success border border-success-subtle">Sweatcon</span></td>
+            <td>—</td>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
+            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
             <td>—</td>
           </tr>
           <tr>
-            <th scope="row">18:00</th>
-            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
-            <td><span class="badge bg-dark-subtle text-dark border border-dark-subtle">Sweatcon &amp; Barbell</span></td>
-            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
-            <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Strength &amp; Conditioning</span></td>
-            <td><span class="badge bg-dark-subtle text-dark border border-dark-subtle">Sweatcon &amp; Barbell</span></td>
+            <th scope="row">19:00–20:00</th>
+            <td><span class="badge bg-warning text-dark">Bohemian Bootcamp Beginners</span></td>
             <td>—</td>
-          </tr>
-          <tr>
-            <th scope="row">19:00</th>
-            <td><span class="badge bg-warning text-dark">Beginners Bootcamp</span></td>
+            <td><span class="badge bg-secondary text-white">Strength &amp; Conditioning Beginners</span></td>
             <td>—</td>
-            <td><span class="badge bg-secondary text-white">Beginners S&amp;C</span></td>
-            <td><span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">Mindfulness &amp; Mobility</span></td>
             <td>—</td>
             <td>—</td>
           </tr>
